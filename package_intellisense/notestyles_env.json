@@ -16,5 +16,11 @@
     "detail": "indentparagraph",
     "snippet": "",
     "package": "notestyles"
+  },
+  "sidenote{}": {
+    "name": "sidenote",
+    "detail": "sidenote{title}",
+    "snippet": "{${1:title}}",
+    "package": "notestyles"
   }
 }
