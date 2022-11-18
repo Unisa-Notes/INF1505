@@ -11,8 +11,9 @@
 \newcommand\question[1]{\item{\bfseries #1\\}}
 
 % Language Settings
+\RequirePackage[english=nohyphenation]{hyphsubst}
 \RequirePackage[english]{babel}
-% \setlocalecaption{english}{chapter}{Unit}
+\sloppy
 
 % Bookmarks
 \usepackage[bookmarksnumbered]{hyperref}
@@ -47,9 +48,11 @@
 \colorlet{exercise border}{orange!75!black}
 
 % Tables
-\RequirePackage{booktabs}
-\RequirePackage{makecell}
-\renewcommand\theadfont{\bfseries}
+\RequirePackage{tabularray}
+\UseTblrLibrary{booktabs}
+\UseTblrLibrary{varwidth}
+\SetTblrInner[tblr]{measure=vbox}
+\newcommand{\nl}{\\}
 
 % Color Boxes
 \RequirePackage{parskip}
