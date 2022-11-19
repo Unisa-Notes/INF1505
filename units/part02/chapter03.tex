@@ -3,6 +3,113 @@
 
 \begin{document}
 	\setcounter{chapter}{2}
-	\chapter[Hardware]{Hardware: Input, Processing, Output and Storage Devices}
+	\chapter{Hardware: Input, Processing, Output and Storage Devices}
+	\chaptermark{Hardware}
+		\section{Computer Systems: Integrating the Power of Technology}
+		\sectionmark{Computer Systems}
+			\subsection{Hardware Components}
+				\begin{definition}{Central Processing Unit (CPU)}
+					Part of the computer that consists of three associated elements: the \concept{arithmetic logic unit (ALU)}, the \concept{control unit}, and the \concept{register} area.
+				\end{definition}
+				\begin{definition}{Arithmetic Logic Unit (ALU)}
+					The part of the CPU that performs mathematical calculations and makes logical comparisons.
+				\end{definition}
+				\begin{definition}{Control Unit}
+					The part of the CPU that sequentially accesses program instructions, decodes them, and coordinates the flow of data in and out of the ALU, the registers, the primary storage, and even secondary storage and various output devices.
+				\end{definition}
+				\begin{definition}{Registers}
+					High speed storage areas in the CPU used to temporarily hold small units of program instructions and data immediately before, during, and after execution by the CPU.
+				\end{definition}
+				\begin{definition}{Primary Storage}
+					Also called \concept{main memory} or \concept{memory}. The part of the computer that holds program instructions and data
+				\end{definition}
+			\subsection{Hardware Components in Action}
+				\begin{definition}{Machine Cycle}
+					The instruction phase followed by the execution phase.
+				\end{definition}
+				\begin{sidenote}{Pipelining}
+					Used to speed up processing. A form of CPU operation in which multiple execution passes are performed in a single machine cycle.
+				\end{sidenote}
+				\subsubsection{Instruction Phase}
+					\begin{enumerate}
+						\item \concept{Fetch instruction} Reads the next program instruction to be executed and any necessary data into the processor.
+						\item \concept{Decode instruction} Decode the instruction and pass it to the appropriate processor execution unit.
+					\end{enumerate}
+					\begin{definition}{Instruction Time (i-time)}
+					The time it takes to perform the instruction phase, i.e. the fetch and decode instruction steps.
+					\end{definition}
+				\subsubsection{Execution Phase}
+					\begin{enumerate}[resume]
+						\item \concept{Execute instruction} Hardware carries out the instruction.
+						\item \concept{Store results} The results of the operation are stored in registers or memory.
+					\end{enumerate}
+					\begin{definition}{Execution Time (e-time)}
+						The time it takes to execute an instruction and store the results.
+					\end{definition}
+
+		\section[Processing and Memory Devices]{Processing and Memory Devices: Power, Speed and Capacity}
+			The components responsible for processing are housed together in the same box, called the \concept{system unit}.
+			\subsection{Processing Characteristics and Functions}
+				\begin{definition}{Machine Cycle Time}
+					The time in which a machine cycle occurs is measured in \concept{nanoseconds} and \concept{picoseconds}. It can also be measured by how many instructions are executed in one second.
+					\begin{description}
+						\item[MIPS] Millions of instructions per second, a measure of machine cycle time. 
+					\end{description}
+				\end{definition}
+				\begin{definition}{Clock Speed}
+					A series of electronic pulses produced at a predetermined rate that affects machine cycle time.
+
+					Often measured in \concept{megahertz} and \concept{gigahertz}.
+					\begin{description}
+						\item[Megahertz] Millions of cycles per second.
+						\item[Gigahertz] Billions of cycles per second.
+					\end{description}
+
+					The higher the clock speed, the more head the processor generates.
+				\end{definition}
+				\begin{sidenote}{Moore's Law}
+					A hypothesis stating that transistor densities on a single chip will double every two years.
+				\end{sidenote}
+			\subsection{Memory Characteristics and Functions}
+				\begin{definition}{Storage Capacity}
+					Data is stored in on and off states, called \concept{bits}. Eight bits together form a \concept{byte}, which typically represents a single character of data.
+
+					\begin{center}
+					Byte $\rightarrow$ Kilobyte (kB) $\rightarrow$ Megabyte (MB) $\rightarrow$ Gigabyte (GB) $\rightarrow$ Terabyte (TB) $\rightarrow$ Petabyte (PB) $\rightarrow$ Exabyte (EB)
+					\end{center}
+				\end{definition}
+				\subsubsection{Types of Memory}
+					\begin{definition}{Random Access Memory (RAM)}
+						A form of memory in which instructions or data can be temporarily stored. These are \concept{volatile} storage devices -- they lose their contents if the current is turned off or disrupted. Mounted directly on the computer's main circuit board.
+					\end{definition}
+					\begin{definition}{Read Only Memory (ROM)}
+						A non-volatile form of memory -- provides permanent storage for data and instructions that do not change.
+					\end{definition}
+					\begin{definition}{Cache Memory}
+						A type of high-speed memory that a processor can access more rapidly than main memory. There are three levels: \concept{L1} is on the CPU chip, \concept{L2} can be accessed by the CPU over a high-speed dedicated interface (recently placed directly on the CPU chip), and \concept{L3} is accessed by a high-speed dedicated interface if L2 is on the CPU chip.
+					\end{definition}
+			\subsection{Multiprocessing}
+				\begin{definition}{Multiprocessing}
+					The simultaneous execution of two or more instructions at the same time.
+				\end{definition}
+				\begin{definition}{Coprocessor}
+					Speeds processing up by executing specific types of instructions while the CPU works on another processing activity. A GPU would be an example.
+				\end{definition}
+				\begin{definition}{Multicore Microprocessor}
+					A microprocessor that combines two or more independent processors into a single computer so that they share the workload and improve processing capacity.
+				\end{definition}
+			\subsection{Parallel Computing}
+				\begin{definition}{Parallel Computing}
+					The simultaneous execution of the same task on multiple processors to obtain results faster.
+				\end{definition}
+				\begin{definition}{Bus}
+					A connection between components within a computer, or devices connected to a computer.
+				\end{definition}
+				\begin{definition}{Massively Parallel Processing Systems}
+					A form of multiprocessing that speeds processing by linking hundreds or thousands of processors to operate at the same time, or in parallel, with each processor having its own bus, memory, discs, copy of the operating system, and applications.
+				\end{definition}
+				\begin{definition}{Grid Computing}
+					The use of a collection of computers, often owned by multiple individuals or organisations, to work in a coordinated manner to solve a common problem.
+				\end{definition}
 	\vbox{\rulechapterend}
 \end{document}
