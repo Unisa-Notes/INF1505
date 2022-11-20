@@ -127,5 +127,56 @@
 				\begin{definition}{Document Production}
 					The process of generating output records and reports.
 				\end{definition}
+
+		\section{Traditional Transaction Processing Applications}
+			\begin{sidenote}{Systems that support Order Processing, Purchasing, and Accounting Functions}
+				\begin{tblr}{colspec={>{\raggedright}X>{\raggedright}X[2]>{\raggedright}X}, row{even}={bg={white}}, row{1}={font=\bfseries}}
+					Order Processing & Purchasing & Accounting\\
+					\midrule
+					Order entry & Inventory control (raw materials, packing materials, spare parts, and supplies) & Budget\\
+					Sales configuration & Purchase order processing & Accounts receivable\\
+					Shipment planning & Receiving & Payroll\\
+					Shipment execution & Accounts payable & Asset management\\
+					Inventory control (finished product) & & General ledger\\
+					Accounts receivable
+				\end{tblr}
+			\end{sidenote}
+			\subsection{Order Processing Systems}
+				\begin{tblr}{colspec={>{\raggedright}X>{\raggedright}X[1.5]>{\raggedright}X[1.5]>{\raggedright}X}, row{even}={table even}, row{1}={font=\bfseries}}
+					\toprule
+					System & Input & Processing & Output\\
+					\midrule
+					Order entry & Customer order information & Order checked for accuracy. On-hand inventory checked to ensure each item can be shipped, or a substitute item is suggested & An open order record\\
+					Sales configuration & Customer order information & Review customer order information and ensure the configuration will meet customers needs. Suggest additional options and features & Revised customer order\\
+					Shipment planning & Open orders & Determine which open orders will be filled, when, and from which location each order will be shipped & Pick list for each order, to be filled from each shipping location, showing the items and quantities needed\\
+					Shipment execution & Pick list and data entered by warehouse operations personnel & Data entered by warehouse operations personnel captured and used to update record & A shipped order record specifying exactly what was shipped to the customer\\
+					Inventory control (finished product) & Record of each item picked to fill a customer order & Inventory records updated to reflect current quantity of each item & Updated inventory database and various management reports\\
+					Accounts receivable & Shipped order records, and payment from customers & Determine amount owed by each customer for each order placed & Invoice statement containing details for each order; customer's accounts receivable data is updated\\
+					\bottomrule
+				\end{tblr}
+			\subsection{Purchasing Systems}
+				\begin{tblr}{colspec={>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}, row{even}={table even}, row{1}={font=\bfseries}}
+					\toprule
+					System & Input & Processing & Output\\
+					\midrule
+					Inventory control & Records reflecting any increase or decrease in the inventory of specific items of raw materials, packing materials, or spare parts & Withdrawals are subtracted from inventory counts, additions are added to inventory counts & The inventory record of each item is updated\\
+					Purchase order processing & Inventory records, employee-prepared purchase order requests, information on preferred suppliers & Items and quantities that need to be ordered are determined, supplier is identified & Purchase order placed with preferred suppliers\\
+					Receiving & Information on the quantity and quality of items received & Receipt matched to purchase order, input data is edited for accuracy and completeness & Receiving report is created, inventory records are updated\\
+					Accounts payable & Purchase orders placed, information of receipts, supplier invoices & Supplier invoice matched to original purchase order and receiving report & Payment generated to supplier\\
+					\bottomrule
+				\end{tblr}
+			\subsection{Accounting Systems}
+				\begin{tblr}{colspec={>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}, row{even}={table even}, row{1}={font=\bfseries}}
+					\toprule
+					System & Input & Processing & Output\\
+					\midrule
+					Budget & Amounts budgeted for various categories of expense & Accumulate amount spent in each budget category & Budget status report\\
+					Accounts receivable & Shipment records specifying what was shipped to a customer & Determine amounts to be paid by customer, including delivery costs and taxes & Customer bills and monthly statements; management reports summarising customer payments\\
+					Accounts payable & Purchase orders placed; information on receipts; supplier invoices & Supplier invoice matched to original purchase order and receiving report & Payment generated to supplier \\
+					Payroll & Number of hours worked by employees; employee pay rate; employee tax and withholding information & Calculate employee gross and net pay, and amount to be withheld for statutory purposes and employee benefit programmes & Payment and payslip;payroll register\\
+					Asset management & Data regarding the purchase of capital assets & Calculate depreciation and net value of all corporate assets & Listing of all assets, showing purchase price, and current value after depreciation\\
+					General ledger & All transactions affecting the financial standing of the firm & Posts financial transactions to appropriate accounts specified & Financial reports; balance sheet\\
+					\bottomrule
+				\end{tblr}
 	\vbox{\rulechapterend}
 \end{document}
