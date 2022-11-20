@@ -48,6 +48,7 @@
 \colorlet{exercise border}{orange!75!black}
 \colorlet{note color}{red!15!white}
 \colorlet{note border}{red!75!black}
+\colorlet{table even}{blue!15!white}
 
 % Tables
 \RequirePackage{tabularray}
@@ -55,6 +56,12 @@
 \UseTblrLibrary{varwidth}
 \SetTblrInner[tblr]{measure=vbox}
 \newcommand{\nl}{\\}
+
+\DefTblrTemplate{contfoot-text}{default}{}
+\DefTblrTemplate{conthead-text}{default}{}
+\DefTblrTemplate{caption}{default}{}
+\DefTblrTemplate{conthead}{default}{}
+\DefTblrTemplate{capcont}{default}{}
 
 % Color Boxes
 \RequirePackage{parskip}
@@ -95,6 +102,9 @@
 \newcommand{\rulechapterend}{\noindent\rule{\textwidth}{0.4pt}%
 	\cfoot{}
 }
+
+% Images
+\RequirePackage{graphicx}
 
 % Tree Diagrams
 \RequirePackage[edges]{forest}
