@@ -221,7 +221,7 @@
 
 					\concept{Security} is important:
 					\begin{indentparagraph}
-						\begin{description}
+						\begin{description}[nosep]
 							\item[Security of the transmission itself] Can be protected and assured using \concept{encryption}.
 							\item[Transaction made with the intended party] Can be ensured using \concept{digital certificates}.
 						\end{description}
@@ -237,7 +237,7 @@
 				\end{sidenote}
 
 		\section{Production and Supply Chain Management}
-			\begin{description}
+			\begin{description}[nosep]
 				\item[1. Sales forecasting] Develop an estimate of future customer demand. At a fairly high-level with estimates made by product group.
 				\item[2. Sales and Operations Plan] Consider demand and current inventory levels, and determine the specific product items that need to be produced and when to meet the forecast future demand.
 				\item[3. Demand Management] Refine the production plan by determining the amount of weekly or daily production needed. The output is the \concept{master production schedule}, a production plan for all finished goods.
@@ -248,19 +248,49 @@
 				\item[8. Capture information about production] Determine what was produced, and in what quantities. Can be done using personal computers that scan a \concept{universal product code (UPC)} on the packing material, or using RFID chips, or manually entering information. Separately, production quality can be measured, which typically uses the \concept{batch identification number}.
 			\end{description}
 
-		\section{Customer Relationship Management and Sales Ordering}
+		\section[Customer Relationship Management]{Customer Relationship Management and Sales Ordering}
 			\subsection{Customer Relationship Management}
 				\begin{definition}{Customer Relationship Management (CRM) System}
 					A system that helps a company manage all aspects of customer encounters, including marketing and advertising, sales, customer service after the sale, and programmes to retain loyal customers.
 
 					The goal is to understand and anticipate the needs of current and potential customers, to increase customer retention and loyalty, while optimising the way that products and services are sold.
 					\begin{center}
-						\includegraphics[width=0.6\textwidth]{chapter07/customer_relationship.png}
+						\includegraphics[width=0.75\textwidth]{chapter07/customer_relationship.png}
 					\end{center}
 				\end{definition}
 			\subsection{Sales Ordering}
 				\begin{definition}{Sales Ordering}
 					The set of activities that must be performed to capture a customer sales order. Includes recording the times to be purchased, setting the sales price, recording the order quantity, determining the total cost of the order including delivery costs, and confirming the customer's available credit.
 				\end{definition}
+
+		\pagebreak
+		\section{Financial and Managerial Accounting}
+			\begin{definition}{General Ledger}
+				The main accounting record of a business. Often divided into different categories, including:
+				\begin{multicols}{2}
+					\begin{itemize}[nosep]
+						\item assets
+						\item liabilities
+						\item revenue
+						\item expenses
+						\item equity
+					\end{itemize}
+				\end{multicols}
+				These categories are then further subdivided into sub-ledgers:
+				\begin{multicols}{2}
+					\begin{itemize}[nosep]
+						\item cash
+						\item accounts payable
+						\item accounts receivable
+						\item etc.
+					\end{itemize}
+				\end{multicols}
+			\end{definition}
+			\begin{definition}{Financial Accounting}
+				Capturing and recording all the transactions that affect a company's financial state, and then using these documented transactions to prepare financial statements for external decision-makers.
+			\end{definition}
+			\begin{sidenote}{Hosted Software Model for Enterprise Software}
+				A pay-as-you-go approach that appeals to small businesses, as they can experiment with powerful software capabilities without making a major financial investment.
+			\end{sidenote}
 	\vbox{\rulechapterend}
 \end{document}
