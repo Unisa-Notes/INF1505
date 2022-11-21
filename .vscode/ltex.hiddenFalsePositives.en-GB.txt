@@ -17,3 +17,4 @@
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QVendor ERP Solutions Apache Open For Business ERP Compiere Compiere Open Source ERP Openbravo Openbravo Open Source ERP WepERP WebERP\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QVendor ERP Solutions Apache Open For Business ERP Compiere Compiere Open Source ERP Openbravo Openbravo Open Source ERP WebERP\\E$"}
 {"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QVendor ERP Solutions Apache Open For Business ERP Compiere Compiere Open Source ERP Openbravo Openbravo Open Source ERP WebERP WebERP\\E$"}
+{"rule":"NON_STANDARD_WORD","sentence":"^\\QCardinality for a binary relationship can be one to one (1:1), one to many (1:M), or many to many (M:M).\\E$"}

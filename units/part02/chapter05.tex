@@ -4,5 +4,93 @@
 \begin{document}
 	\setcounter{chapter}{4}
 	\chapter{Organising and Storing Data}
+		\section{Data Management and Data Modelling}
+			\begin{definition}{Relational Database}
+				A series of related tables, stored together with a minimum of duplication to achieve a consistent and controlled pool of data.
+			\end{definition}
+			\begin{definition}{Entity}
+				A person, place, or thing about whom or about which an organisation wants to store data.
+			\end{definition}
+			\begin{definition}{Record}
+				A row in a table; all the data pertaining to one instance of an entity.
+			\end{definition}
+			\begin{definition}{Field}
+				A characteristic or attribute of an entity that is stored in the database.
+			\end{definition}
+			\begin{definition}{Primary Key}
+				A field in a table that is unique -- each record in that table has a different value in the primary key field. Used to uniquely identify each record and to create relationships between tables.
+			\end{definition}
+			\begin{sidenote}{Advantages of the Database Approach}
+				\begin{multicols}{2}
+					\begin{itemize}[nosep]
+						\item Improved strategic use of corporate data
+						\item Reduced data redundancy
+						\item Easier modification and updating
+						\item Data and program independence
+						\item Better access to data and information
+						\item Standardisation of data access
+						\item A framework for program development
+						\item Better overall protection of the data
+						\item Shared data and information resources
+					\end{itemize}
+				\end{multicols}
+			\end{sidenote}
+			\begin{sidenote}{Disadvantages of the Database Approach}
+				\begin{multicols}{2}
+					\begin{itemize}
+						\item More complexity
+						\item More difficult to recover from a failure
+						\item More expensive
+					\end{itemize}
+				\end{multicols}
+			\end{sidenote}
+			\subsection{Relationships Between Tables}
+				Use a primary key from another table to make the tables related.
+				\begin{definition}{Foreign Key}
+					When a primary key is posted into another table to create a relationship between the two.
+				\end{definition}
+			\subsection{Designing Relational Databases}
+				\begin{enumerate}[nosep]
+					\item Identify all entities
+					\item Identify all relationships between entities
+					\item Identify all attributes
+					\item Resolve all relationships
+				\end{enumerate}
+				\subsubsection{Identify Entities}
+					Determine which entities information needs to be stored about. Usually done by interviewing the firm's managers and staff, or using questionnaires.
+				\subsubsection{Identify Relationships}
+					Determine what relevant relationships exist between entities. These need to be the relationships the firm wants to store data about.
+					\begin{definition}{Degree}
+						The number of entities involved in a relationship.
+					\end{definition}
+					\begin{definition}{Cardinality}
+						Whether each entity in a relationship is related to one or more than one of the other entities. The number of one entity that can be related to another entity. Cardinality for a binary relationship can be one to one (1:1), one to many (1:M), or many to many (M:M).
+					\end{definition}
+					\begin{definition}{Optionality}
+						Documents whether a relationship must exist for each entity, or whether it is optional. If a binary relationship is optional for an entity, that entity doesn't have to be related to the other.
+					\end{definition}
+					\begin{sidenote}{Entity-Relationship Diagram Example}
+						\begin{center}
+							\includegraphics[width=0.85\textwidth]{chapter05/entity_relationship_diagram.png}
+						\end{center}
+						The crow's foot notation means many, so a supplier supplies many products, but each product is supplied by only one supplier.
+
+						The O and | represent optionality. An O means the relationship is optional, a | means the relationship is obligatory.
+					\end{sidenote}
+					\begin{definition}{Enterprise Rules}
+						The rules governing relationships between entities.
+					\end{definition}
+					\begin{example}
+						Enterprise rules:
+						\begin{itemize}
+							\item Each order must be placed by one and only one customer
+							\item Each customer can place many orders, but some won't have placed any orders
+						\end{itemize}
+					\end{example}
+				\subsubsection{Identify Attributes}
+					Identify what information will be stored about each entity. An \concept{attribute} should be the smallest sensible piece of data that is to be stored.
+				\subsubsection{Resolve Relationships}
+					Determining how a relationship should be implemented.
+
 	\vbox{\rulechapterend}
 \end{document}
