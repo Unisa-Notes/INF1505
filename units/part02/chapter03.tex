@@ -3,6 +3,483 @@
 
 \begin{document}
 	\setcounter{chapter}{2}
-	\chapter[Hardware]{Hardware: Input, Processing, Output and Storage Devices}
+	\chapter{Hardware: Input, Processing, Output and Storage Devices}
+	\chaptermark{Hardware}
+		\section{Computer Systems: Integrating the Power of Technology}
+		\sectionmark{Computer Systems}
+			\subsection{Hardware Components}
+				\begin{definition}{Central Processing Unit (CPU)}
+					Part of the computer that consists of three associated elements: the \concept{arithmetic logic unit (ALU)}, the \concept{control unit}, and the \concept{register} area.
+				\end{definition}
+				\begin{definition}{Arithmetic Logic Unit (ALU)}
+					The part of the CPU that performs mathematical calculations and makes logical comparisons.
+				\end{definition}
+				\begin{definition}{Control Unit}
+					The part of the CPU that sequentially accesses program instructions, decodes them, and coordinates the flow of data in and out of the ALU, the registers, the primary storage, and even secondary storage and various output devices.
+				\end{definition}
+				\begin{definition}{Registers}
+					High speed storage areas in the CPU used to temporarily hold small units of program instructions and data immediately before, during, and after execution by the CPU.
+				\end{definition}
+				\begin{definition}{Primary Storage}
+					Also called \concept{main memory} or \concept{memory}. The part of the computer that holds program instructions and data
+				\end{definition}
+			\subsection{Hardware Components in Action}
+				\begin{definition}{Machine Cycle}
+					The instruction phase followed by the execution phase.
+				\end{definition}
+				\begin{sidenote}{Pipelining}
+					Used to speed up processing. A form of CPU operation in which multiple execution passes are performed in a single machine cycle.
+				\end{sidenote}
+				\subsubsection{Instruction Phase}
+					\begin{enumerate}
+						\item \concept{Fetch instruction} Reads the next program instruction to be executed and any necessary data into the processor.
+						\item \concept{Decode instruction} Decode the instruction and pass it to the appropriate processor execution unit.
+					\end{enumerate}
+					\begin{definition}{Instruction Time (i-time)}
+					The time it takes to perform the instruction phase, i.e. the fetch and decode instruction steps.
+					\end{definition}
+				\subsubsection{Execution Phase}
+					\begin{enumerate}[resume]
+						\item \concept{Execute instruction} Hardware carries out the instruction.
+						\item \concept{Store results} The results of the operation are stored in registers or memory.
+					\end{enumerate}
+					\begin{definition}{Execution Time (e-time)}
+						The time it takes to execute an instruction and store the results.
+					\end{definition}
+
+		\section[Processing and Memory Devices]{Processing and Memory Devices: Power, Speed and Capacity}
+			The components responsible for processing are housed together in the same box, called the \concept{system unit}.
+			\subsection{Processing Characteristics and Functions}
+				\begin{definition}{Machine Cycle Time}
+					The time in which a machine cycle occurs is measured in \concept{nanoseconds} and \concept{picoseconds}. It can also be measured by how many instructions are executed in one second.
+					\begin{description}
+						\item[MIPS] Millions of instructions per second, a measure of machine cycle time. 
+					\end{description}
+				\end{definition}
+				\begin{definition}{Clock Speed}
+					A series of electronic pulses produced at a predetermined rate that affects machine cycle time.
+
+					Often measured in \concept{megahertz} and \concept{gigahertz}.
+					\begin{description}
+						\item[Megahertz] Millions of cycles per second.
+						\item[Gigahertz] Billions of cycles per second.
+					\end{description}
+
+					The higher the clock speed, the more head the processor generates.
+				\end{definition}
+				\begin{sidenote}{Moore's Law}
+					A hypothesis stating that transistor densities on a single chip will double every two years.
+				\end{sidenote}
+			\subsection{Memory Characteristics and Functions}
+				\begin{definition}{Storage Capacity}
+					Data is stored in on and off states, called \concept{bits}. Eight bits together form a \concept{byte}, which typically represents a single character of data.
+
+					\begin{center}
+					Byte $\rightarrow$ Kilobyte (kB) $\rightarrow$ Megabyte (MB) $\rightarrow$ Gigabyte (GB) $\rightarrow$ Terabyte (TB) $\rightarrow$ Petabyte (PB) $\rightarrow$ Exabyte (EB)
+					\end{center}
+				\end{definition}
+				\subsubsection{Types of Memory}
+					\begin{definition}{Random Access Memory (RAM)}
+						A form of memory in which instructions or data can be temporarily stored. These are \concept{volatile} storage devices -- they lose their contents if the current is turned off or disrupted. Mounted directly on the computer's main circuit board.
+					\end{definition}
+					\begin{definition}{Read Only Memory (ROM)}
+						A non-volatile form of memory -- provides permanent storage for data and instructions that do not change.
+					\end{definition}
+					\begin{definition}{Cache Memory}
+						A type of high-speed memory that a processor can access more rapidly than main memory. There are three levels: \concept{L1} is on the CPU chip, \concept{L2} can be accessed by the CPU over a high-speed dedicated interface (recently placed directly on the CPU chip), and \concept{L3} is accessed by a high-speed dedicated interface if L2 is on the CPU chip.
+					\end{definition}
+			\subsection{Multiprocessing}
+				\begin{definition}{Multiprocessing}
+					The simultaneous execution of two or more instructions at the same time.
+				\end{definition}
+				\begin{definition}{Coprocessor}
+					Speeds processing up by executing specific types of instructions while the CPU works on another processing activity. A GPU would be an example.
+				\end{definition}
+				\begin{definition}{Multicore Microprocessor}
+					A microprocessor that combines two or more independent processors into a single computer so that they share the workload and improve processing capacity.
+				\end{definition}
+			\subsection{Parallel Computing}
+				\begin{definition}{Parallel Computing}
+					The simultaneous execution of the same task on multiple processors to obtain results faster.
+				\end{definition}
+				\begin{definition}{Bus}
+					A connection between components within a computer, or devices connected to a computer.
+				\end{definition}
+				\begin{definition}{Massively Parallel Processing Systems}
+					A form of multiprocessing that speeds processing by linking hundreds or thousands of processors to operate at the same time, or in parallel, with each processor having its own bus, memory, discs, copy of the operating system, and applications.
+				\end{definition}
+				\begin{definition}{Grid Computing}
+					The use of a collection of computers, often owned by multiple individuals or organisations, to work in a coordinated manner to solve a common problem.
+				\end{definition}
+		\pagebreak
+		\section{Secondary Storage}
+			\begin{definition}{Secondary Storage}
+				Devices that can store large amounts of data, instructions and information, more permanently than allowed in main memory.
+
+				Non-volatile, greater capacity, and greater economy.
+			\end{definition}
+			\subsection{Access Methods}
+				\begin{definition}{Sequential Access}
+					A retrieval method in which data must be accessed in the order in which it was stored.
+
+					Accessed using \concept{sequential access storage devices (SASD)}.
+				\end{definition}
+				\begin{definition}{Direct Access}
+					A retrieval method in which data can be retrieved without the need to read and discard other data. Usually faster than sequential access.
+
+					Accessed using \concept{direct access storage devices (DASD)}.
+				\end{definition}
+			\subsection{Secondary Storage Devices}
+				Secondary storage is not directly accessible to the CPU. Instead, input/output channels are used to access secondary storage.
+				\subsubsection{Magnetic Secondary Storage Devices}
+					Use tape or disk devices covered with a thin magnetic coating.
+					\begin{definition}{Magnetic Tape}
+						A type of sequential secondary storage medium, now used primarily for storing backups of critical organisational data in the event of a disaster.
+					\end{definition}
+					\begin{definition}{Magnetic Disc}
+						A direct access storage device with bits represented by magnetised areas.
+					\end{definition}
+					\begin{definition}{Redundant Array of Indepependent/Inexpensive Discs (RAID)}
+						A method of storing data that generates extra bits of data from existing data, allowing the system to create a `reconstruction map' so that, if a hard drive fails, the system can rebuild lost data.
+
+						Data is split and stored on different physical disc drives using a technique called \concept{striping} to evenly distribute the data.
+					\end{definition}
+					\begin{definition}{Disc Mirroring}
+						A process of storing data that provides an exact copy that protects the users fully in the event of data loss. Requires doubling the amount of storage.
+					\end{definition}
+					\begin{definition}{Virtual Tape}
+						A storage device for less frequently needed data, so that it appears to be stored entirely on tape cartridges, although some parts of it might actually be located on faster hard discs.
+
+						The software associated is sometimes called a \concept{virtual tape server}.
+					\end{definition}
+				\subsubsection{Optical Secondary Storage Devices}
+					\begin{definition}{Optical Storage Device}
+						A form of data storage that uses lasers to read and write data.
+
+						Done by physically burning pits into the disc.
+					\end{definition}
+					\begin{definition}{Compact Disc Read-Only Memory (CD-ROM)}
+						A common form of optical disc on which data cannot be modified once it has been recorded.
+
+						Alternatives are CD-recordable (CD-R) and CD-rewritable (CD-RW).
+					\end{definition}
+					\begin{definition}{Digital Video Disc (DVD)}
+						A storage medium used to store software, video games, and movies.
+
+						Blu-ray stores at lease three times as much data as a DVD.
+					\end{definition}
+				\subsubsection{Solid State Secondary Storage Devices}
+					\begin{definition}{Solid State Storage Device (SSD)}
+						Stores data in memory chips rather than on hard disk drives. Require less power and provide faster data access.
+					\end{definition}
+			\pagebreak
+			\subsection{Enterprise Storage Options}
+				\begin{sidenote}{Attached Storage}
+					Include the storage methods discussed above; connected to a single computer. Do not allow systems to share storage, and can be difficult to back up data.
+				\end{sidenote}
+				\begin{definition}{Network Attached Storage (NAS)}
+					Hard disc storage that is set up with its own network address rather than being attached to a computer.
+				\end{definition}
+				\begin{definition}{Storage Area Network (SAN)}
+					A special-purpose, high-speed network that provides high-speed connections between storage devices and computers over a network.
+				\end{definition}
+				\begin{sidenote}{NAS vs SAN}
+					NAS uses file input/output, which defines data as complete containers of information, while SAN deals with block input/output, which is based on subsets of data smaller than a file.
+				\end{sidenote}
+				\begin{definition}{Policy-Based Storage Management}
+					Automation of storage using previously defined policies.
+				\end{definition}
+				\begin{definition}{Software as a Service (SaaS)}
+					A data storage model where a data storage service provider rents space to individuals and organisations. The rented storage is accessed via the Internet.
+				\end{definition}
+
+		\section[Input and Output Devices]{Input and Output Devices: The Gateway to Computer Systems}
+			\subsection{Data Entry and Input}
+				\begin{definition}{Data Entry}
+					Converting human-readable data into a machine-readable form.
+				\end{definition}
+				\begin{definition}{Data Input}
+					Transferring machine-readable data into the system.
+				\end{definition}
+				\begin{definition}{Source Data Automation}
+					Capturing and editing data where it is initially created, and in a form that can be directly entered into a computer, thus ensuring accuracy and timeliness.
+				\end{definition}
+			\subsection{Input Devices}
+				A keyboard and mouse are the most common devices used for entry and input of data such as characters, text, and basic commands.
+				\begin{definition}{Speech-Recognition Technology}
+					Input devices that recognise human speech.
+
+					\concept{Interactive Voice Response (IVR)} systems allow a computer to recognise both voices and keypad inputs.
+				\end{definition}
+				\begin{definition}{Digital Cameras}
+					An input device used with a PC to record and store images and video in digital form.
+				\end{definition}
+				\begin{definition}{Scanning Devices}
+					Capture image and character data.
+				\end{definition}
+				\begin{definition}{Optical Data Readers}
+					Used to scan documents. There are two types:
+					\begin{description}
+						\item[Optical Mark Recognition (OMR)] Used for grading tests and other purposes, where check boxes are filled in on the page.
+						\item[Optical Character Recognition (OCR)] Used to identify machine-generated characters, as well as handwriting and typed documents.  
+					\end{description}
+				\end{definition}
+				\begin{definition}{Magnetic Ink Character Recognition (MICR) Devices}
+					Data placed at the bottom of a cheque or form using a special magnetic ink. This ink is then readable by both computers and people.
+				\end{definition}
+				\begin{definition}{Magnetic Strip Card}
+					A type of card that stores a limited of data by modifying the magnetism of tiny iron-based particles contained in a band on the card. Read by physically swiping the card, therefore called a \concept{contact card}.
+				\end{definition}
+				\begin{definition}{Chip-and-PIN Card}
+					A type of card that employs a computer chip that communicates with a card reader using radio frequencies; it does not need to be swiped at a terminal.
+
+					\begin{description}
+						\item[PIN] Personal Identification Number 
+					\end{description}
+				\end{definition}
+				\begin{definition}{Contactless Card}
+					A card with an embedded chip that only needs to be held close to a terminal to transfer its data; no PIN needs to be entered. 
+				\end{definition}
+				\begin{definition}{Point-of-Sale (POS) Device}
+					A terminal used to enter data into the computer system.
+				\end{definition}
+				\begin{definition}{Automated Teller Machine (ATM) Devices}
+					A terminal that bank customers use to perform transactions with their bank accounts.
+				\end{definition}
+				\begin{definition}{Pen Input Devices}
+					Use a special pen to input data to a device, such as commands, handwritten notes, and drawings.
+				\end{definition}
+				\begin{definition}{Touch Sensitive Screens}
+					Allow screens to function as input as well as output devices.
+				\end{definition}
+				\begin{definition}{Barcode Scanners and QR Readers}
+					\begin{description}
+						\item[Barcode Scanner] Employ laser scanners to read a barcoded label and pass the data to a computer.
+						\item[Quick Response (QR) Code] Represent text as an image that can be interpreted through a digital camera.
+					\end{description}
+				\end{definition}
+				\begin{definition}{Radio Frequency Identification (RFID)}
+					A technology that employs a microchip with an antenna to broadcast its unique identifier and location to receivers.
+
+					Transmit data via a mobile device called a \concept{tag}, which is read by an RFID reader and processed according to the needs of the computer program.
+
+					RFID chips are often placed on retail items and then read using an in-store tracker.
+
+					Includes a special form of \concept{EPROM memory} that holds data about the item to which the tag is attached.
+				\end{definition}
+			\subsection{Output Devices}
+				\subsubsection{Display Monitors}
+					A device used to display the output from the computer. Early monitors used a \concept{cathode-ray tube} to display images, sometimes called \concept{CRTs}.
+					\begin{definition}{Pixel}
+						A dot of colour on a photo image or a point of light on a display screen.
+					\end{definition}
+					\begin{definition}{Plasma Display}
+						A type of display using thousands of smart cells (pixels) consisting of electrodes, and neon and xenon gasses that are electrically turned into plasma to emit light.
+						\begin{description}
+							\item[Plasma] Electrically charged atoms and negatively charged particles. 
+						\end{description}
+						Each pixel is made up of three types of light: red, green, and blue.
+					\end{definition}
+					\begin{definition}{LCD displays}
+						Flat displays that use liquid crystals to form characters and images on a backlit screen.
+						\begin{description}
+							\item[Liquid Crystals] Organic, oil-like material placed between two polarisers. 
+						\end{description}
+						Easier on one's eyes than CRTs, as they are flicker-free, brighter, and do not emit the type of radiation that concerns CRT users. Take up less space, and use less than half of the electricity needed for a CRT.
+						\begin{description}
+							\item[Thin-film Transistor (TFT) LCDs] A type of liquid crystal display that assigns a transistor to control each pixel, resulting in higher resolution and faster response times.
+						\end{description}
+					\end{definition}
+					\begin{definition}{Organic Light-Emitting Diode (OLED) Display}
+						A flat display that uses a layer of organic material sandwiched between two conductors, which in turn are sandwiched between a glass top plate and a glass bottom plate, so that when electric current is applied to the two conductors, a bright, electroluminescent light is produced directly from the organic material.
+					\end{definition}
+					\begin{sidenote}{Screen Properties}
+						\begin{description}
+							\item[Aspect Ratio] The ratio of the width of the display to its height. Some common aspect ratios: 4:3, 16:10, 16:9, 15:9.
+							\item[Screen Size] Measured diagonally from the outside of the screen casing for CRT monitors, and from the inside of the screen casing for LCDs.
+							\item[Resolution] The total number of pixels contained in the display.
+							\item[Dot Pitch] The distance between one pixel on the screen and the nearest pixel. Common range is from 0.25 mm to 0.31 mm. The smaller the dot pitch, the better the picture.
+						\end{description}
+					\end{sidenote}
+					\begin{definition}{Digital Video Interface (DVI)}
+						A video interface standard designed to maximise the visual quality of digital display devices.
+					\end{definition}
+				\subsubsection{Printers and Plotters}
+					\begin{definition}{Hard Copy}
+						Paper output from a printer.
+					\end{definition}
+					\begin{sidenote}{Types of printers}
+						\begin{multicols}{2}
+							\begin{itemize}[nosep]
+								\item Laser Printers
+								\item Inkjet Printers
+							\end{itemize}
+						\end{multicols}
+					\end{sidenote}
+					\begin{sidenote}{Printer Properties}
+						\begin{description}
+							\item[Speed] Measured by the number of pages printed per minute (ppm).
+							\item[Dots Per Inch (DPI)] The number of dots printed per inch -- affects the quality and resolution of a printer's output.  
+						\end{description}
+					\end{sidenote}
+					\begin{definition}{Plotter}
+						A type of hard-copy output device used for general design work.
+					\end{definition}
+				\subsubsection{3D Printers}
+					\begin{definition}{3D Printer}
+						Takes a three-dimensional model of an object stored on a computer, and sends it to a 3D printer to create the object using strands of a plastic filament or synthetic powder
+					\end{definition}
+				\subsubsection{Digital Audio Players}
+					\begin{definition}{Digital Audio Player}
+						A device that can store, organise, and play digital music files.
+					\end{definition}
+					\begin{definition}{MPEG-1 Audio Layer-3 (MP3)}
+						A standard format for compressing a sound sequence into a small file.
+					\end{definition}
+				\subsubsection{E-book Readers}
+					\begin{definition}{E-reader}
+						Used to read e-books. Uses tiny LEDs at the bottom of the display, which disperse light across the entire screen. Very easy on the eyes.
+						\begin{description}
+							\item[Electronic Book (e-book)] Digital media equivalent of a conventional printed book.
+						\end{description}
+					\end{definition}
+
+		\section{Computer System Types}
+			Computers can be classified as \concept{special purpose} or \concept{general purpose}.
+			\begin{description}
+				\item[Special-Purpose Computers] Used for limited applications.
+				\item[General-Purpose Computers] Used for a variety of applications. Can be divided into two groups: \concept{systems used by one user}, and \concept{systems used by concurrent users}.
+			\end{description}
+			\subsection{Portable Computers}
+				\begin{definition}{Portable Computer}
+					A computer small enough to carry easily. Include handheld computers, laptop computers, notebook computers, netbook computers, and tablet computers.
+				\end{definition}
+				\begin{definition}{Handheld Computers}
+					Single-user computers that provide ease of portability because of its small size.
+				\end{definition}
+				\begin{definition}{Smartphone}
+					A handheld computer that combines the functionality of a mobile phone, camera, web browser, email tool, MP3 player, and other devices, into a single device.
+				\end{definition}
+				\begin{definition}{Laptop Computer}
+					A personal computer designed for use by mobile users, being small and light enough to sit comfortably on a user's lap.
+
+					Can match most desktop computers in computing power.
+				\end{definition}
+				\begin{definition}{Notebook Computers}
+					Smaller than a laptop computer, an extremely lightweight computer that weighs less than 2 kilograms, and can easily fit in a briefcase.
+				\end{definition}
+				\begin{definition}{Netbook Computers}
+					A small, light, inexpensive member of the laptop computer family.
+				\end{definition}
+				\begin{definition}{Tablet Computers}
+					Portable, lightweight computers with no keyboard that allow you to roam the office, home, or factory floor, carrying the device like a clipboard.
+					\begin{description}
+						\item[Slate Computers] Tablet PCs that support input only via a writing stylus.
+						\item[Convertible Tablet PC] A tablet PC that comes with a swivel screen, and can be used as a traditional notebook or as a pen-based tablet PC. 
+					\end{description}
+				\end{definition}
+			\subsection{Non-portable Single-User Computers}
+				\begin{definition}{Thin Client}
+					A low-cost, centrally managed computer with essential but limited capabilities and no extra drives or extension slots.
+				\end{definition}
+				\begin{definition}{Desktop Computers}
+					Non-portable computers that fit on a desktop and provide sufficient computing power, memory and storage for most business computing tasks. Highly versatile.
+				\end{definition}
+				\begin{definition}{Nettop Computer}
+					An inexpensive desktop computer designed to be smaller, lighter, and consume much less power than a traditional desktop computer.
+				\end{definition}
+				\begin{definition}{Workstations}
+					A more powerful personal computer used for mathematical computing, computer-assisted design (CAD), and other high-end processing, but still small enough to fit on a desktop.
+				\end{definition}
+			\subsection{Multiple-User Computer Systems}
+				\subsubsection{Servers}
+					\begin{definition}{Server}
+						A computer employed by many users to perform a specific task, such as running network or Internet applications.
+
+						Have large memory and storage capacities, along with fast and efficient communications abilities.
+						\begin{description}
+							\item[Web Server] Handles Internet traffic and communications.
+							\item[Enterprise Server] Stores and provides access to programs that meet the needs of the entire organisation.
+							\item[File Server] Stores and coordinates program and data files.
+						\end{description}
+
+						A \concept{server farm} houses many servers in the same room, where access to the machines can be controlled.
+					\end{definition}
+					\begin{definition}{Scalability}
+						The ability to increase the processing capability of a computer system so that it can handle more users, more data, or more transactions in a given period.
+
+						Increased by adding more, or more powerful, processors.
+						\begin{description}
+							\item[Scaling up] Adding more powerful processors
+							\item[Scaling out] Adds many more equal (or less powerful) processors 
+						\end{description}
+					\end{definition}
+					\begin{sidenote}{Hyperthreading}
+						Enable each core to conduct two sets of instructions, called threads. Gives each processor the ability to run up to 20 threads simultaneously.
+					\end{sidenote}
+					\begin{definition}{Virtual Server}
+						A method of logically dividing the resources of a single physical server, to create multiple logical servers, each acting as its own dedicated machine.
+					\end{definition}
+					\begin{definition}{Blade Server}
+						A server that houses many individual computer motherboards that include one or more processors, computer memory, computer storage, and computer network connections. These all share a common power supply, and cooling source.
+					\end{definition}
+				\subsubsection{Mainframe Computers}
+					\begin{definition}{Mainframe Computer}
+						A large, powerful computer, often shared by hundreds of concurrent users connected to the machine over a network.
+
+						Must reside in a data centre with special HVAC equipment to control temperature, humidity, and dust levels. Often kept in a secure data centre with limited access.
+
+						\begin{description}
+							\item[Computer Downsizing] Move computer jobs from the mainframe to smaller, less expensive computers.
+						\end{description}
+					\end{definition}
+				\subsubsection{Supercomputers}
+					\begin{definition}{Supercomputers}
+						The most powerful computer systems with the fastest processing speeds. Special purpose machines designed for applications that require extensive and rapid computational capabilities.
+					\end{definition}
+					\begin{definition}{Graphics Processing Unit (GPU)}
+						A specialised circuit that is very efficient at manipulating computer graphics, and is much faster than the typical CPU chip at performing floating point operations and executing algorithms for which the processing of large blocks of data is done in parallel.
+					\end{definition}
+
+		\section{Green Computing}
+			\begin{definition}{Green Computing}
+				A program concerned with the efficient and environmentally responsible design, manufacture, operation, and disposal of IS-related products.
+
+				Three goals:
+				\begin{enumerate}
+					\item Reduce the use of hazardous material
+					\item Allow companies to lower their power-related costs
+					\item Enable the safe disposal of recycling of computers and computer-related equipment.
+				\end{enumerate}
+			\end{definition}
+			\begin{sidenote}{Banned Substances}
+				New electrical and electronic equipment cannot contain these substances exceeding certain maximum concentration values:
+				\begin{multicols}{2}
+					\begin{itemize}[nosep]
+						\item lead
+						\item mercury
+						\item cadmium
+						\item hexavalent chromium
+						\item polybrominated biphenyls
+						\item polybrominated diphenylethers
+					\end{itemize}
+				\end{multicols}
+			\end{sidenote}
+
+		\section{Exercises}
+			\begin{exercise}{Self-Assessment}
+				\begin{enumerate}
+					\item The \concept{Arithmetic Logic Unit} hardware component performs mathematical calculations.
+					\item A \concept{register} holds small units of program instructions and data immediately before, during, and after the execution by the computer.
+					\item \concept{MIPS} is a measure of machine cycle time.
+					\item A terabyte is 2 to the power of \concept{40} bytes.
+					\item Magnetic Tape is an example of \concept{secondary storage}.
+					\item A \concept{thin client} is a low-cost computer with no extra drives or expansion slots.
+					\item Project Gutenberg is a source of \concept{e-books}.
+					\item The ability to increase processing in order to handle more users is called \concept{scalability}.
+					\item Google uses \concept{seawater} to cool its servers in Finland.
+					\item EPEAT assists with the assessment of \concept{green computing}.
+				\end{enumerate}
+			\end{exercise}
 	\vbox{\rulechapterend}
 \end{document}
