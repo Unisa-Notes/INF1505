@@ -111,5 +111,86 @@
 				\begin{definition}{Grid Computing}
 					The use of a collection of computers, often owned by multiple individuals or organisations, to work in a coordinated manner to solve a common problem.
 				\end{definition}
+		\pagebreak
+		\section{Secondary Storage}
+			\begin{definition}{Secondary Storage}
+				Devices that can store large amounts of data, instructions and information, more permanently than allowed in main memory.
+
+				Non-volatile, greater capacity, and greater economy.
+			\end{definition}
+			\subsection{Access Methods}
+				\begin{definition}{Sequential Access}
+					A retrieval method in which data must be accessed in the order in which it was stored.
+
+					Accessed using \concept{sequential access storage devices (SASD)}.
+				\end{definition}
+				\begin{definition}{Direct Access}
+					A retrieval method in which data can be retrieved without the need to read and discard other data. Usually faster than sequential access.
+
+					Accessed using \concept{direct access storage devices (DASD)}.
+				\end{definition}
+			\subsection{Secondary Storage Devices}
+				Secondary storage is not directly accessible to the CPU. Instead, input/output channels are used to access secondary storage.
+				\subsubsection{Magnetic Secondary Storage Devices}
+					Use tape or disk devices covered with a thin magnetic coating.
+					\begin{definition}{Magnetic Tape}
+						A type of sequential secondary storage medium, now used primarily for storing backups of critical organisational data in the event of a disaster.
+					\end{definition}
+					\begin{definition}{Magnetic Disc}
+						A direct access storage device with bits represented by magnetised areas.
+					\end{definition}
+					\begin{definition}{Redundant Array of Indepependent/Inexpensive Discs (RAID)}
+						A method of storing data that generates extra bits of data from existing data, allowing the system to create a `reconstruction map' so that, if a hard drive fails, the system can rebuild lost data.
+
+						Data is split and stored on different physical disc drives using a technique called \concept{striping} to evenly distribute the data.
+					\end{definition}
+					\begin{definition}{Disc Mirroring}
+						A process of storing data that provides an exact copy that protects the users fully in the event of data loss. Requires doubling the amount of storage.
+					\end{definition}
+					\begin{definition}{Virtual Tape}
+						A storage device for less frequently needed data, so that it appears to be stored entirely on tape cartridges, although some parts of it might actually be located on faster hard discs.
+
+						The software associated is sometimes called a \concept{virtual tape server}.
+					\end{definition}
+				\subsubsection{Optical Secondary Storage Devices}
+					\begin{definition}{Optical Storage Device}
+						A form of data storage that uses lasers to read and write data.
+
+						Done by physically burning pits into the disc.
+					\end{definition}
+					\begin{definition}{Compact Disc Read-Only Memory (CD-ROM)}
+						A common form of optical disc on which data cannot be modified once it has been recorded.
+
+						Alternatives are CD-recordable (CD-R) and CD-rewritable (CD-RW).
+					\end{definition}
+					\begin{definition}{Digital Video Disc (DVD)}
+						A storage medium used to store software, video games, and movies.
+
+						Blu-ray stores at lease three times as much data as a DVD.
+					\end{definition}
+				\subsubsection{Solid State Secondary Storage Devices}
+					\begin{definition}{Solid State Storage Device (SSD)}
+						Stores data in memory chips rather than on hard disk drives. Require less power and provide faster data access.
+					\end{definition}
+			\pagebreak
+			\subsection{Enterprise Storage Options}
+				\begin{sidenote}{Attached Storage}
+					Include the storage methods discussed above; connected to a single computer. Do not allow systems to share storage, and can be difficult to back up data.
+				\end{sidenote}
+				\begin{definition}{Network Attached Storage (NAS)}
+					Hard disc storage that is set up with its own network address rather than being attached to a computer.
+				\end{definition}
+				\begin{definition}{Storage Area Network (SAN)}
+					A special-purpose, high-speed network that provides high-speed connections between storage devices and computers over a network.
+				\end{definition}
+				\begin{sidenote}{NAS vs SAN}
+					NAS uses file input/output, which defines data as complete containers of information, while SAN deals with block input/output, which is based on subsets of data smaller than a file.
+				\end{sidenote}
+				\begin{definition}{Policy-Based Storage Management}
+					Automation of storage using previously defined policies.
+				\end{definition}
+				\begin{definition}{Software as a Service (SaaS)}
+					A data storage model where a data storage service provider rents space to individuals and organisations. The rented storage is accessed via the Internet.
+				\end{definition}
 	\vbox{\rulechapterend}
 \end{document}
