@@ -92,5 +92,66 @@
 				\subsubsection{Resolve Relationships}
 					Determining how a relationship should be implemented.
 
+		\pagebreak
+		\section{Database Management Systems}
+			\begin{definition}{Database Management System (DBMS)}
+				A group of programs used as an interface between a database and application programs, or between a database and the user.
+			\end{definition}
+			\subsection{Creating and Modifying the Database}
+				\begin{definition}{Data Definition Language}
+					A collection of instructions and commands used to define and describe data and relationships in a specific database. An example is \concept{Structured Query Language (SQL)}.
+				\end{definition}
+				\begin{definition}{Data Dictionary}
+					A detailed description of all the data used in the database.
+
+					Describes all the fields in the database, their range of accepted values, the type of data, the amount of storage space needed, and a note of who can access, and who can update.
+				\end{definition}
+			\subsection{Storing and Retrieving Data}
+				A DBMS needs to be an interface between an application program and the database. To do this:
+				\begin{itemize}
+					\item The application requests data from the DBMS, following a \concept{logical access path (LAP)}.
+					\item The DBMS accesses a storage device where the data is stored, following a \concept{physical access path (PAP)}.
+				\end{itemize}
+				\begin{sidenote}{Problems with Access}
+					Two or more people or programs trying to access the same record in a database can be problematic. This is called \concept{concurrency}.
+				\end{sidenote}
+				\begin{definition}{Concurrency Control}
+					A method of dealing with a situation in which two or more people need to access the same record in a database at the same time.
+				\end{definition}
+			\subsection{Manipulating Data and Generating Reports}
+				After a DBMS is installed, it can be used to review reports and obtain important information.
+				\begin{definition}{Database Manipulation Language (DML)}
+					The commands that are used to manipulate the data in the database. SQL can also be used as one of these.
+				\end{definition}
+			\subsection{Database Administration}
+				\begin{definition}{Database Administrator (DBA)}
+					The role of the database administrator is to plan, design, create, operate, secure, monitor, and maintain databases.
+
+					Typically, has a degree in computer science or management information systems, and some on-the-job training. 
+				\end{definition}
+				\begin{definition}{Data Administrator}
+					A non-technical position responsible for defining and implementing consistent principles for a variety of data issues.
+				\end{definition}
+			\subsection{Selecting a Database Management System}
+				The DBA often selects the DBMS for an organisation. Begins by analysing database needs and characteristics.
+				\begin{sidenote}{Important Characteristics of Databases}
+					\begin{description}
+						\item[Database size] The number of records or files in the database
+						\item[Database cost] The purchase or lease costs of the database
+						\item[Concurrent Users] The number of people who need to use the database at the same time
+						\item[Performance] How fast the database is able to update records
+						\item[Integration] The ability of the database to be integrated with other applications and databases
+						\item[Vendor] The reputation and financial stability of the database vendor 
+					\end{description}
+				\end{sidenote}
+			\subsection{Using Databases with Other Software}
+				A DBMS can act as a front-end application or a back-end application.
+				\begin{indentparagraph}
+					\begin{description}
+						\item[Front-end application] An application that directly interacts with people or users.
+						\item[Back-end application] An application that interacts with other programs or applications; it only indirectly interacts with people or users.
+					\end{description}
+				\end{indentparagraph}
+
 	\vbox{\rulechapterend}
 \end{document}
