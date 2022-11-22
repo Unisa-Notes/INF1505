@@ -7,3 +7,6 @@ polybrominated
 diphenylethers
 EPEAT
 OLAP
+dBase
+Scitor
+QuarkXPress
