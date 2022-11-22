@@ -56,5 +56,107 @@
 				\begin{definition}{Enterprise Sphere of Influence}
 					The sphere of influence that serves the needs of the firm in its interaction with its environment.
 				\end{definition}
+
+		\section{Systems Software}
+			\subsection{Operating Systems}
+				\begin{definition}{Operating System (OS)}
+					A set of computer programs that controls the computer hardware, and acts as an interface with applications.
+				\end{definition}
+				\begin{sidenote}{Combinations of OS}
+					\begin{description}
+						\item[Single computer with a single user] Used in a personal computer, table computer, or a smartphone, that supports one user at a time. Examples: Microsoft Windows, macOS, Android.
+						\item[Single computer with multiple simultaneous users] Typical of larger server or mainframe computers that can support hundreds or thousands of people, all using the computer at the same time. Examples: UNIX, z/OS, HP UX.
+						\item[Multiple computers with multiple users] Typical of a network of computers, such as a home network with several computers attached, or large computer networks with hundreds of computers attached, supporting many users. Most PC operating systems double as network operating systems. Examples: Red Hat Linux, Windows Server, macOS Server.
+						\item[Special-purpose computer] Typical of a number of computers with specialised functions, such as sophisticated military aircraft, space shuttles, digital cameras, or home appliances. Examples: Windows Embedded, Symbian, some distributions of Linux
+					\end{description}
+				\end{sidenote}
+				\begin{definition}{Rescue Disc}
+					A storage device that contains some or all of the OS. Can be used to start the computer if there are problems with the primary hard disc.
+				\end{definition}
+				\begin{definition}{Kernel}
+					The heart of the operating system, which controls its most critical processes.
+				\end{definition}
+				\subsubsection{Common Hardware Functions}
+					\begin{sidenote}{Common Hardware Functions}
+						\begin{multicols}{3}
+							\begin{itemize}[nosep]
+								\item Get input from keyboard and input devices
+								\item Retrieve data from discs
+								\item Store data on discs
+								\item Display information on a monitor or printer
+							\end{itemize}
+						\end{multicols}
+					\end{sidenote}
+					\begin{definition}{Device Drivers}
+						Software provided by device manufacturers, that the operating system uses to communicate with and control a device.
+					\end{definition}
+				\subsubsection{User Interface and Input/Output Management}
+					\begin{definition}{User Interface}
+						The element of the operating system that allows people to access and interact with the computer system.
+					\end{definition}
+					\begin{definition}{Command-Based User Interface}
+						A user interface that requires a user to give text commands to the computer to perform basic activities.
+					\end{definition}
+					\begin{definition}{Graphical User Interface (GUI)}
+						An interface that displays pictures (\concept{icons}) and menus that people use to send commands to the computer system.
+						\begin{description}
+							\item[Natural User Interface (NUI)] A touch or \concept{multitouch} interface.
+							\item[Sight Interface] Uses a camera on the computer to determine where a person is looking on the screen, and performs the appropriate command or operation.
+							\item[Brain Interfaces] Sensors connected to the human brain that can detect brain waves and control a computer as a result.
+						\end{description}
+					\end{definition}
+				\subsubsection{Hardware Independence}
+					\begin{definition}{Application Program Interface (API)}
+						Tools software developers use to build application software without needing to understand the inner workings of the OS and the hardware.
+					\end{definition}
+					\begin{definition}{Hardware Independence}
+						Being able to develop software without concern for the specific underlying hardware.
+					\end{definition}
+				\subsubsection{Memory Management}
+					The OS controls how memory is accessed, maximizing the use of available memory and storage to provide optimum efficiency.
+					\begin{definition}{Virtual Memory}
+						The OS allocates space on the hard disc to supplement the immediate, functional memory capacity of RAM. It does this using \concept{paging} - swapping programs or parts of programs between memory and one of more disc devices.
+					\end{definition}
+				\subsubsection{Processing Tasks}
+					\begin{definition}{Task Management}
+						Allocating computer resources to make the best use of each system's assets.
+						\begin{description}
+							\item[Time Sharing] Allow more than one person to use a computer at the same time.
+							\item[Scalability] The ability of the computer to handle an increasing number of concurrent users smoothly.
+						\end{description}
+					\end{definition}
+				\subsubsection{Embedded Operating Systems}
+					\begin{definition}{Embedded System}
+						A computer system that is implanted in and dedicated to the control of another device.
+					\end{definition}
+			\subsection{Utility Programs}
+				\begin{definition}{Utility Program}
+					A program that helps to perform maintenance or correct problems with a computer system.
+				\end{definition}
+				\begin{definition}{Grid Computing}
+					Allow people and organisations to take advantage of unused computer power over a network.
+				\end{definition}
+				\begin{sidenote}{Types of Utility Programs}
+					\begin{description}
+						\item[Hardware Utilities] Check the status of all parts of the PC. \concept{Disc utilities} check the hard disc's boot sector, file allocation tables and directories, and analyse them to ensure the hard disc is not damaged.
+						\item[Security Utilities] Used to protect the computer from threats. \concept{Antivirus software} and \concept{anti-spyware software}. \concept{Firewall software} filters incoming and outgoing packets, making sure than neither hackers nor their tools are attacking the system.
+						\item[File Compression Utilities] Reduce the amount of disc space required to store a file, or reduce the time it takes to transfer a file over the internet.
+						\item[Spam-Filtering Utilities] Email software that routes spam to a junk mail folder.
+						\item[Network and Internet Utilities] Used to monitor hardware and network performance, and tricker an alert when a server is crashing, or a network problem occurs.
+						\item[Server and Mainframe Utilities] Used to enhance the performance of servers and mainframe computers. \concept{Server virtualisation software} allows a server to run more than one operating system at the same time.
+						\item[Other Utilities] An example is \concept{mobile device management (MDM)}, software that helps companies manage mobile phones and mobile devices from its company and others.
+					\end{description}
+				\end{sidenote}
+			\subsection{Middleware}
+				\begin{definition}{Middleware}
+					Software that allows various systems to communicate and exchange data.
+
+					Can serve as an interface between the Internet and private corporate systems. Has led to the development of \concept{service-oriented architecture (SOA)}
+				\end{definition}
+				\begin{definition}{Service-Oriented Architecture (SOA)}
+					A modular method of developing software and systems, that allows users to interact with systems, and systems to interact with each other.
+
+					Systems developed with SOA are flexible, and ideal for businesses that need to expand and evolve over time.
+				\end{definition}
 	\vbox{\rulechapterend}
 \end{document}
