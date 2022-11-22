@@ -224,5 +224,68 @@
 				\begin{definition}{The Make-or-Buy Decision}
 					Determining whether software should be developed specifically for the business (\concept{make}) or purchased off the shelf (\concept{buy}).
 				\end{definition}
+
+		\section{Programming Languages}
+			\begin{definition}{Programming Language}
+				A set of keywords, commands, symbols and rules for constructing statements by which humans can communicate instructions to a computer.
+				\begin{description}
+					\item[Program Code] The set of instructions that signal the CPU to perform circuit-switching operations.
+					\item[Syntax] A set of rules associated with a programming language -- dictates how the symbols, keywords, and commands should be combined into statements capable of conveying meaningful instructions to the CPU. 
+				\end{description}
+			\end{definition}
+			\pagebreak
+			\subsection{The Evolution of Programming Languages}
+				\begin{center}
+					\begin{tblr}{colspec={>{\raggedright}X[1.5]>{\raggedright}X[2.5]>{\raggedright}X[2]>{\raggedright}X[3]}, row{1}={font=\bfseries}, column{1}={font=\bfseries}, row{even}={table even}}
+						\toprule
+						Generation & Language & Approximate Development Date & Sample Statement\\
+						\midrule
+						First & Machine Language & 1940s & \texttt{00010101}\\
+						Second & Assembly Language & 1950s & \texttt{MVC}\\
+						Third & High-level Language & 1960s & \texttt{READ SALES}\\
+						Fourth & Query and database languages & 1970s & \texttt{PRINT EMPLOYEE\_NUMBER} \nl \texttt{IF GROSS\_PAY > 1000}\\
+						Fifth+ & Natural and intelligent languages & 1980s & IF gross pay is greater than 40, THEN pay the employee overtime pay\\
+						\bottomrule
+					\end{tblr}
+				\end{center}
+			\subsection{Visual, Object-Oriented and Artificial Intelligence Languages}
+					\begin{definition}{Visual Programming}
+						Uses a graphical or `visual' interface combined with text-based commands. A software engineer drags and drops graphical objects onto an application form. Then, using a programming language, the programmer defined the capabilities of those objects.
+					\end{definition}
+					\begin{sidenote}{Visual Programming and Visual Programming Languages}
+						Using Visual Programming does \emph{not} mean that one is using a Visual Programming Language.
+					\end{sidenote}
+					\begin{definition}{Visual Programming Languages}
+						Software is created by manipulating programming elements only graphically, without the use of any text-based programming language commands.
+					\end{definition}
+					\begin{definition}{Object-Oriented Programming Languages}
+						Programming languages based on objects.
+						\begin{description}
+							\item[Object] A programming element that consists of data and the actions that can be performed on the data.
+						\end{description}
+					\end{definition}
+					\begin{definition}{Fifth-Generation Languages (5GLs)}
+						Programming languages used to create artificial intelligence or expert systems applications. Sometimes called \concept{natural languages}.
+					\end{definition}
+			\subsection{Aspects of Programming Languages}
+				\begin{definition}{Compiler}
+					A special software program that converts the programmer's source code into machine-level instructions, which consist of binary digits.
+
+					Exists from third-generation programming languages, up.
+
+					Creates a two-stage process for program execution:
+					\begin{enumerate}
+						\item Compiler translates the program into a machine language.
+						\item The CPU executes that program.
+					\end{enumerate}
+				\end{definition}
+				\begin{definition}{Interpreter}
+					A language translator that carries out the operations called for by the source program. Does not produce a complete machine-language program.
+				\end{definition}
+				\begin{definition}{Integrated Development Environment (IDE)}
+					Software that combines all the tools required for software engineering into one package.
+
+					\concept{Software Development Kits (SDKs)} serve the purpose of an IDE for a particular platform.
+				\end{definition}
 	\vbox{\rulechapterend}
 \end{document}
