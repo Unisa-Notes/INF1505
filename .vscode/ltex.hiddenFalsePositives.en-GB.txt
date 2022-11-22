@@ -18,3 +18,6 @@
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\QVendor ERP Solutions Apache Open For Business ERP Compiere Compiere Open Source ERP Openbravo Openbravo Open Source ERP WebERP\\E$"}
 {"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QVendor ERP Solutions Apache Open For Business ERP Compiere Compiere Open Source ERP Openbravo Openbravo Open Source ERP WebERP WebERP\\E$"}
 {"rule":"NON_STANDARD_WORD","sentence":"^\\QCardinality for a binary relationship can be one to one (1:1), one to many (1:M), or many to many (M:M).\\E$"}
+{"rule":"DID_FOUND_AMBIGUOUS","sentence":"^\\QThree such satellites, spaced at even intervals, can span the entire Earth.\\E$"}
+{"rule":"TRUNK_BOOT","sentence":"^\\QEnables usrs to share a certain number of outside lines (trunk lines) to make telephone calls to people outside the organisation.\\E$"}
+{"rule":"TRUNK_BOOT","sentence":"^\\QEnables users to share a certain number of outside lines (trunk lines) to make telephone calls to people outside the organisation.\\E$"}
