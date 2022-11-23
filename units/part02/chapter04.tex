@@ -4,5 +4,340 @@
 \begin{document}
 	\setcounter{chapter}{3}
 	\chapter[Software]{Software: Systems and Application Software}
+		\section{An Overview of Software}
+			\begin{definition}{Software}
+				Computer programs that control the workings of computer hardware.
+			\end{definition}
+			\begin{definition}{Computer Programs}
+				Sequences of instructions for the computer.
+			\end{definition}
+			\begin{definition}{Documentation}
+				Text that describes a program's functions to help the user operate the computer system.
+			\end{definition}
+			\subsection{Systems Software}
+				\begin{definition}{Systems Software}
+					The set of programs that coordinates the activities and functions of the hardware and other programs throughout the computer system.
+
+					Each type of systems software is designed for a specific CPU and class of hardware. The combination of a hardware configuration and systems software is known as a \concept{computer system platform}.
+				\end{definition}
+			\subsection{Application Software}
+				\begin{definition}{Application Software}
+					Programs that help users solve particular computing problems.
+					\begin{description}
+						\item[Rich Internet Application (RIA)] A web-delivered application that combines the hardware resources of the web server and the PC to deliver valuable software services through a web browser interface. 
+					\end{description}
+				\end{definition}
+			\subsection{Supporting Individual, Group, and Organisational Goals}
+				\begin{definition}{Sphere of Influence}
+					The scope of the problems and opportunities that an organisation addresses.
+				\end{definition}
+				\begin{center}
+					\begin{tblr}{colspec={>{\raggedright}X[2]>{\raggedright}X[3]>{\raggedright}X[3]>{\raggedright}X[3]}, row{1}={font=\bfseries}, column{1}={font=\bfseries}, row{even}={table even}}
+						\toprule
+						Software & Personal & Workgroup & Enterprise\\
+						\midrule
+						Systems Software & Personal devices' operating systems & Network operating systems & Server and mainframe operating systems\\
+						Application Software & Word processing, spreadsheet, database, and graphics & Electronic mail, group scheduling, shared work and collaboration & General ledger, order entry, payroll, and human resources\\
+						\bottomrule
+					\end{tblr}
+				\end{center}
+				\begin{definition}{Personal Sphere of Influence}
+					The sphere of influence that serves the needs of an individual user.
+				\end{definition}
+				\begin{definition}{Personal Productivity Software}
+					The software that enables users to improve their personal effectiveness, increasing the amount of work, and quality of the work they can do.
+				\end{definition}
+				\begin{definition}{Workgroup}
+					Two or more people who work together to achieve a common goal.
+				\end{definition}
+				\begin{definition}{Workgroup Sphere of Influence}
+					The sphere of influence that helps workgroup members attain their common goals.
+				\end{definition}
+				\begin{definition}{Enterprise Sphere of Influence}
+					The sphere of influence that serves the needs of the firm in its interaction with its environment.
+				\end{definition}
+
+		\section{Systems Software}
+			\subsection{Operating Systems}
+				\begin{definition}{Operating System (OS)}
+					A set of computer programs that controls the computer hardware, and acts as an interface with applications.
+				\end{definition}
+				\begin{sidenote}{Combinations of OS}
+					\begin{description}
+						\item[Single computer with a single user] Used in a personal computer, table computer, or a smartphone, that supports one user at a time. Examples: Microsoft Windows, macOS, Android.
+						\item[Single computer with multiple simultaneous users] Typical of larger server or mainframe computers that can support hundreds or thousands of people, all using the computer at the same time. Examples: UNIX, z/OS, HP UX.
+						\item[Multiple computers with multiple users] Typical of a network of computers, such as a home network with several computers attached, or large computer networks with hundreds of computers attached, supporting many users. Most PC operating systems double as network operating systems. Examples: Red Hat Linux, Windows Server, macOS Server.
+						\item[Special-purpose computer] Typical of a number of computers with specialised functions, such as sophisticated military aircraft, space shuttles, digital cameras, or home appliances. Examples: Windows Embedded, Symbian, some distributions of Linux
+					\end{description}
+				\end{sidenote}
+				\begin{definition}{Rescue Disc}
+					A storage device that contains some or all of the OS. Can be used to start the computer if there are problems with the primary hard disc.
+				\end{definition}
+				\begin{definition}{Kernel}
+					The heart of the operating system, which controls its most critical processes.
+				\end{definition}
+				\subsubsection{Common Hardware Functions}
+					\begin{sidenote}{Common Hardware Functions}
+						\begin{multicols}{3}
+							\begin{itemize}[nosep]
+								\item Get input from keyboard and input devices
+								\item Retrieve data from discs
+								\item Store data on discs
+								\item Display information on a monitor or printer
+							\end{itemize}
+						\end{multicols}
+					\end{sidenote}
+					\begin{definition}{Device Drivers}
+						Software provided by device manufacturers, that the operating system uses to communicate with and control a device.
+					\end{definition}
+				\subsubsection{User Interface and Input/Output Management}
+					\begin{definition}{User Interface}
+						The element of the operating system that allows people to access and interact with the computer system.
+					\end{definition}
+					\begin{definition}{Command-Based User Interface}
+						A user interface that requires a user to give text commands to the computer to perform basic activities.
+					\end{definition}
+					\begin{definition}{Graphical User Interface (GUI)}
+						An interface that displays pictures (\concept{icons}) and menus that people use to send commands to the computer system.
+						\begin{description}
+							\item[Natural User Interface (NUI)] A touch or \concept{multitouch} interface.
+							\item[Sight Interface] Uses a camera on the computer to determine where a person is looking on the screen, and performs the appropriate command or operation.
+							\item[Brain Interfaces] Sensors connected to the human brain that can detect brain waves and control a computer as a result.
+						\end{description}
+					\end{definition}
+				\subsubsection{Hardware Independence}
+					\begin{definition}{Application Program Interface (API)}
+						Tools software developers use to build application software without needing to understand the inner workings of the OS and the hardware.
+					\end{definition}
+					\begin{definition}{Hardware Independence}
+						Being able to develop software without concern for the specific underlying hardware.
+					\end{definition}
+				\subsubsection{Memory Management}
+					The OS controls how memory is accessed, maximizing the use of available memory and storage to provide optimum efficiency.
+					\begin{definition}{Virtual Memory}
+						The OS allocates space on the hard disc to supplement the immediate, functional memory capacity of RAM. It does this using \concept{paging} - swapping programs or parts of programs between memory and one of more disc devices.
+					\end{definition}
+				\subsubsection{Processing Tasks}
+					\begin{definition}{Task Management}
+						Allocating computer resources to make the best use of each system's assets.
+						\begin{description}
+							\item[Time Sharing] Allow more than one person to use a computer at the same time.
+							\item[Scalability] The ability of the computer to handle an increasing number of concurrent users smoothly.
+						\end{description}
+					\end{definition}
+				\subsubsection{Embedded Operating Systems}
+					\begin{definition}{Embedded System}
+						A computer system that is implanted in and dedicated to the control of another device.
+					\end{definition}
+			\subsection{Utility Programs}
+				\begin{definition}{Utility Program}
+					A program that helps to perform maintenance or correct problems with a computer system.
+				\end{definition}
+				\begin{definition}{Grid Computing}
+					Allow people and organisations to take advantage of unused computer power over a network.
+				\end{definition}
+				\begin{sidenote}{Types of Utility Programs}
+					\begin{description}
+						\item[Hardware Utilities] Check the status of all parts of the PC. \concept{Disc utilities} check the hard disc's boot sector, file allocation tables and directories, and analyse them to ensure the hard disc is not damaged.
+						\item[Security Utilities] Used to protect the computer from threats. \concept{Antivirus software} and \concept{anti-spyware software}. \concept{Firewall software} filters incoming and outgoing packets, making sure than neither hackers nor their tools are attacking the system.
+						\item[File Compression Utilities] Reduce the amount of disc space required to store a file, or reduce the time it takes to transfer a file over the internet.
+						\item[Spam-Filtering Utilities] Email software that routes spam to a junk mail folder.
+						\item[Network and Internet Utilities] Used to monitor hardware and network performance, and tricker an alert when a server is crashing, or a network problem occurs.
+						\item[Server and Mainframe Utilities] Used to enhance the performance of servers and mainframe computers. \concept{Server virtualisation software} allows a server to run more than one operating system at the same time.
+						\item[Other Utilities] An example is \concept{mobile device management (MDM)}, software that helps companies manage mobile phones and mobile devices from its company and others.
+					\end{description}
+				\end{sidenote}
+			\subsection{Middleware}
+				\begin{definition}{Middleware}
+					Software that allows various systems to communicate and exchange data.
+
+					Can serve as an interface between the Internet and private corporate systems. Has led to the development of \concept{service-oriented architecture (SOA)}
+				\end{definition}
+				\begin{definition}{Service-Oriented Architecture (SOA)}
+					A modular method of developing software and systems, that allows users to interact with systems, and systems to interact with each other.
+
+					Systems developed with SOA are flexible, and ideal for businesses that need to expand and evolve over time.
+				\end{definition}
+
+		\section{Application Software}
+			The primary function of application software is to apply the power of the computer to give people, workgroups, and the entire enterprise the ability to solve problems and perform specific tasks.
+			\subsection{Overview of Application Software}
+				\begin{definition}{Proprietary Software}
+					One-of-a-kind software designed for a specific application, and owned by the company, organisation, or person that uses it.
+
+					Can give a company a competitive advantage.
+				\end{definition}
+				\begin{definition}{Off-the-shelf Software}
+					Software that is mass-produced by software vendors to address needs that are common across businesses, organisations, or individuals.
+				\end{definition}
+				\begin{definition}{Application Service Provider (ASP)}
+					A company that provides the software, support and computer hardware on which to run the software from the user's facilities over a network. This is also called \concept{on-demand software}.
+				\end{definition}
+				\begin{definition}{Software as a Service (SaaS)}
+					A service that allows businesses to subscribe to web-delivered application software.
+				\end{definition}
+				\begin{definition}{Cloud Computing}
+					The use of computing resources, including software and data storage, on the Internet (the \concept{cloud}), rather than on local computers.
+				\end{definition}
+			\pagebreak
+			\subsection{Personal Application Software}
+				\begin{center}
+					\begin{tblr}{colspec={>{\raggedright}X[2]>{\raggedright}X[3]>{\raggedright}X[2]}, row{even}={table even}, row{1}={font=\bfseries}, column{1}={font=\bfseries}}
+						\toprule
+						Type of Software & Explanation & Example\\
+						\midrule
+						Word-processing & Create, edit, and print text documents & Microsoft Word \nl Google Docs \nl Apple Pages \nl LibreOffice Writer\\
+						Spreadsheet & Provide a wide range of built-in functions for statistical, financial, logical, database, graphics, date and time calculations & Microsoft Excel \nl IBM Lotus 1-2-3 \nl Google Sheets \nl Apple Numbers \nl LibreOffice Calc\\
+						Database & Store, manipulate, and retrieve data & Microsoft Access \nl IBM Lotus Approach \nl Borland dBase \nl Google Base \nl LibreOffice Base\\
+						Graphics & Develop graphs, illustrations, and drawings & Adobe Illustrator \nl Canva \nl Microsoft PowerPoint \nl LibreOffice Impress\\
+						Project Management & Plan, schedule, allocate and control people and resources needed to complete a project according to schedule & Microsoft Project \nl Symantec On Target \nl Scitor Project \nl Scheduler \nl Symantec Time Line\\
+						Financial Management & Provide income and expense tracking and reporting, to monitor and plan budgets & Intuit Quicken\\
+						Desktop Publishing (DTP) & Use personal computers and high-resolution printers to create high-quality printed output, including text and graphics & QuarkXPress \nl Microsoft Publisher \nl Adobe InDesign \nl Corel Ventura Publisher \nl Apple Pages\\
+						\bottomrule
+					\end{tblr}
+				\end{center}
+				\begin{definition}{Personal Information Management (PIM) Software}
+					Helps people, groups and organisations store useful information, such as a list of tasks to complete, or a set of names and addresses. Microsoft Outlook is an example.
+				\end{definition}
+				\begin{definition}{Software Suite}
+					A collection of single programs packaged together in a bundle.
+				\end{definition}
+				\begin{definition}{Integrated Application Packages}
+					Application that contain several programs.
+				\end{definition}
+			\subsection{Workgroup Application Software}
+				\begin{definition}{Workgroup Application Software}
+					Software that supports teamwork, whether team members are in the same location, or dispersed around the world.
+				\end{definition}
+				\begin{definition}{Groupware}
+					Software that helps group of people work together effectively. Also called \concept{collaborative software}.
+
+					This approach allows a team of managers to work on the same production problem, letting them share their ideas, and work via connected computer systems.
+				\end{definition}
+				\begin{example}
+					Types of workgroup software: group-scheduling software, electronic mail, and other software that enables people to share ideas.
+				\end{example}
+			\subsection{Enterprise Application Software}
+				\begin{definition}{Enterprise Application Software}
+					Software that benefits an entire organisation.
+				\end{definition}
+				\begin{definition}{The Make-or-Buy Decision}
+					Determining whether software should be developed specifically for the business (\concept{make}) or purchased off the shelf (\concept{buy}).
+				\end{definition}
+
+		\section{Programming Languages}
+			\begin{definition}{Programming Language}
+				A set of keywords, commands, symbols and rules for constructing statements by which humans can communicate instructions to a computer.
+				\begin{description}
+					\item[Program Code] The set of instructions that signal the CPU to perform circuit-switching operations.
+					\item[Syntax] A set of rules associated with a programming language -- dictates how the symbols, keywords, and commands should be combined into statements capable of conveying meaningful instructions to the CPU. 
+				\end{description}
+			\end{definition}
+			\pagebreak
+			\subsection{The Evolution of Programming Languages}
+				\begin{center}
+					\begin{tblr}{colspec={>{\raggedright}X[1.5]>{\raggedright}X[2.5]>{\raggedright}X[2]>{\raggedright}X[3]}, row{1}={font=\bfseries}, column{1}={font=\bfseries}, row{even}={table even}}
+						\toprule
+						Generation & Language & Approximate Development Date & Sample Statement\\
+						\midrule
+						First & Machine Language & 1940s & \texttt{00010101}\\
+						Second & Assembly Language & 1950s & \texttt{MVC}\\
+						Third & High-level Language & 1960s & \texttt{READ SALES}\\
+						Fourth & Query and database languages & 1970s & \texttt{PRINT EMPLOYEE\_NUMBER} \nl \texttt{IF GROSS\_PAY > 1000}\\
+						Fifth+ & Natural and intelligent languages & 1980s & IF gross pay is greater than 40, THEN pay the employee overtime pay\\
+						\bottomrule
+					\end{tblr}
+				\end{center}
+			\subsection{Visual, Object-Oriented and Artificial Intelligence Languages}
+					\begin{definition}{Visual Programming}
+						Uses a graphical or `visual' interface combined with text-based commands. A software engineer drags and drops graphical objects onto an application form. Then, using a programming language, the programmer defined the capabilities of those objects.
+					\end{definition}
+					\begin{sidenote}{Visual Programming and Visual Programming Languages}
+						Using Visual Programming does \emph{not} mean that one is using a Visual Programming Language.
+					\end{sidenote}
+					\begin{definition}{Visual Programming Languages}
+						Software is created by manipulating programming elements only graphically, without the use of any text-based programming language commands.
+					\end{definition}
+					\begin{definition}{Object-Oriented Programming Languages}
+						Programming languages based on objects.
+						\begin{description}
+							\item[Object] A programming element that consists of data and the actions that can be performed on the data.
+						\end{description}
+					\end{definition}
+					\begin{definition}{Fifth-Generation Languages (5GLs)}
+						Programming languages used to create artificial intelligence or expert systems applications. Sometimes called \concept{natural languages}.
+					\end{definition}
+			\subsection{Aspects of Programming Languages}
+				\begin{definition}{Compiler}
+					A special software program that converts the programmer's source code into machine-level instructions, which consist of binary digits.
+
+					Exists from third-generation programming languages, up.
+
+					Creates a two-stage process for program execution:
+					\begin{enumerate}
+						\item Compiler translates the program into a machine language.
+						\item The CPU executes that program.
+					\end{enumerate}
+				\end{definition}
+				\begin{definition}{Interpreter}
+					A language translator that carries out the operations called for by the source program. Does not produce a complete machine-language program.
+				\end{definition}
+				\begin{definition}{Integrated Development Environment (IDE)}
+					Software that combines all the tools required for software engineering into one package.
+
+					\concept{Software Development Kits (SDKs)} serve the purpose of an IDE for a particular platform.
+				\end{definition}
+
+		\section{Software Issues and Trends}
+			\subsection{Software Bugs}
+				\begin{definition}{Software Bug}
+					A defect in a computer program that keeps it from performing as it is designed to perform.
+				\end{definition}
+			\subsection{Copyrights and Licences}
+				\begin{center}
+					\begin{tblr}{colspec={>{\raggedright}X[1]>{\raggedright}X[4]}, row{1}={font=\bfseries}, column{1}={font=\bfseries}, row{even}={table even}}
+						\toprule
+						Licence & Description\\
+						\midrule
+						Single-User Licence & Permits you to install the software on one computer, or sometimes two computers, used by one person\\
+						Multiuser licence & Specifies the number of users allowed to use the software, and can be installed on each user's computer.\\
+						Concurrent-user Licence & Designed for network-distributed software, this licence allows any number of users to use the software, but only a specific number of users can use the software at the same time.\\
+						Site Licence & Permits the software to be used anywhere on a particular site (that is, physical place), by everyone on the site.\\
+						\bottomrule
+					\end{tblr}
+				\end{center}
+			\subsection{Freeware and Open-Source Software}
+				\begin{definition}{Freeware}
+					Software that is made available to the public for free. \emph{Not} the same as free software -- simply implies that the software is distributed for free.
+				\end{definition}
+				\begin{definition}{Open-Source Software}
+					Software that is distributed, typically for free, with the source code also available, so that it can be studied, changed, and improved by its users.
+				\end{definition}
+				\begin{sidenote}{GNU General Public Licence (GPL)}
+					Licence used by many popular open-source, free, software.
+					\begin{itemize}
+						\item Run the program for any purpose
+						\item Study how the program works, and adapt it to your needs
+						\item Redistribute copies, so you can help others
+						\item Improve the program, and release improvements to the public
+					\end{itemize}
+					Typically protected by a \concept{copyleft}, which requires that any copies of the work retain the same licence.
+				\end{sidenote}
+
+		\section{Exercises}	
+			\begin{exercise}{Self-Assessment}
+				\begin{enumerate}
+					\item Software can broadly be separated into \concept{systems} and \concept{application} software.
+					\item Linus was developed in 1991 by \concept{Linus Torvalds}.
+					\item The PC operating system by Google is called \concept{Chrome}.
+					\item An operating system designed for a device such as a smartphone is often known as \concept{embedded}.
+					\item One-of-a-kind software developed for a specific business application is called \concept{proprietary software}.
+					\item Providing application software via a web browser is known as \concept{software as a service}.
+					\item PowerPoint is an example of \concept{graphics presentation} software.
+					\item A \concept{compiler} converts source code into machine-language instructions.
+					\item \concept{Open-source software} is available for free and with its source code, which can be modified.
+					\item MySQL is an example of \concept{database software}.
+				\end{enumerate}
+			\end{exercise}
 	\vbox{\rulechapterend}
 \end{document}
