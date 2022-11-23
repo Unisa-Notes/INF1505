@@ -15,3 +15,5 @@ shill
 VSAT
 UDDI
 Satisficing
+EOQ
+ROP
