@@ -12,3 +12,5 @@ Scitor
 QuarkXPress
 POPI
 shill
+VSAT
+UDDI
