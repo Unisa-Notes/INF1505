@@ -148,5 +148,131 @@
 						A telecommunications device that serves as an entrance to another network.
 					\end{definition}
 
+		\section{Networks and Distributed Processing}
+			\begin{definition}{Computer Network}
+				The communications media, devices, and software needed to connect two or more computer systems or devices.
+				\begin{description}
+					\item[Network Nodes] The computers and devices on the network.
+				\end{description}
+			\end{definition}
+			\subsection{Network Types}
+				\begin{definition}{Personal Area Network (PAN)}
+					A network that supports the interconnection of information technology within a range of ten metres or so.
+
+					One device serves as the controller during wireless PAN initialisation, and this controller device mediates communication within the PAN.
+
+					The Bluetooth communication protocol is the industry standard for PAN communications.
+				\end{definition}
+				\pagebreak
+				\begin{definition}{Local Area Network (LAN)}
+					A network that connects computer systems and devices within a small area, such as an office, home, or several floors in a building.
+
+					Often use twisted-pair wire, but other media, such as fibre-optic cable, is also popular.
+
+					A basic type of LAN is a simple peer-to-peer network that a small business might use to share files and hardware devices, such as printers.
+					\begin{description}
+						\item[Peer-to-peer network] A network where each computer is set up as an independent computer, but other computers can access specific files on its hard drive, or share its printer. The networks have no server. 
+					\end{description}
+				\end{definition}
+				\begin{definition}{Metropolitan Area Network (MAN)}
+					A telecommunications network that connects users and their devices in a geographical area that spans a campus or city.
+
+					Most MANs have a range of roughly 100 kilometres.
+				\end{definition}
+				\begin{definition}{Wide Area Network (WAN)}
+					A telecommunications network that ties together large geographic regions.
+				\end{definition}
+				\begin{definition}{Mesh Networking}
+					A way to route communications between network nodes, by allowing continuous connections and reconfiguration around blocked paths, and `hopping' from node to node, until a connection can be established.
+					\begin{description}
+						\item[Full Mesh Topology] Each node is connected directly to each of the other nodes.
+						\item[Partial Mesh Topology] Some nodes might be connected to all the others, and other nodes are connected only to nodes with which they frequently exchange information.
+					\end{description}
+					Robust -- if one node fails, all the other nodes can still communicate with each other, directly or through one of more intermediate nodes.
+				\end{definition}
+			\subsection{Distributed Processing}
+				\begin{definition}{Centralised Processing}
+					A processing alternative in which all processing occurs at a single location or facility.
+
+					Offers the highest degree of control, as a single centrally managed computer performs all data processing.
+				\end{definition}
+				\pagebreak
+				\begin{definition}{Decentralised Processing}
+					A processing alternative in which processing devices are placed at various remote locations.
+
+					Each computer system is isolated, and does not communicate with another system. Suitable for companies with independent operating divisions.
+				\end{definition}
+				\begin{definition}{Distributed Processing}
+					A processing alternative where computers are placed at remote locations, but connected to each other via telecommunications devices.
+
+					A benefit is that managers can allocate data to the locations that can process it most efficiently.
+				\end{definition}
+			\subsection{Client/Server Systems}
+				\begin{definition}{Client/Server Architecture}
+					An architecture in which multiple computer platforms are dedicated to special functions, such as database management, printing, communications, and program execution.
+					\begin{description}
+						\item[Server] One of these computer platforms that is dedicated to a special function. Accessible by all computers on the network.
+							\begin{description}
+								\item[Application server] Holds the programs and data for a particular application.
+								\item[Email server] Sends and receives emails.
+								\item[Web server] Sends out web pages.
+							\end{description}
+						\item[Client] Any computer that sends messages requesting services from the servers on the network.
+					\end{description}
+				\end{definition}
+			\subsection{Communications Software}
+				\begin{definition}{Network Operating System (NOS)}
+					Systems software that controls the computer systems and devices on a network, and allows them to communicate with each other.
+
+					Performs the same types of functions for the network as operating system software does for a computer.
+				\end{definition}
+				\pagebreak
+				\begin{definition}{Network-Management Software}
+					Software that enables a manager on a networked desktop to monitor the use of individual computers and shared hardware, scan for viruses, and ensure compliance with software licences.
+
+					Simplifies the process of updating files and programs on computers on the network. Protects software from being copied, modified, or downloaded illegally.
+
+					\concept{Fault detection} and \concept{performance management} are the two types of network-management produces. Both employ the \concept{Simple Network Management Protocol (SNMP)} to obtain key information from individual network components.
+					\begin{description}
+						\item[Fault Management Software] Alerts IS staff in real time when a device is failing.
+						\item[Performance Management Software] Sends messages to the various devices, to sample their performance and to determine whether they are operating within acceptable levels.
+					\end{description}
+				\end{definition}
+			\subsection{Software-Defined Networking}
+				\begin{definition}{Software-Defined Networking (SDN)}
+					An emerging approach to networking, that allows network administrators to manage a network via a controller that does not require physical access to all the network devices.
+
+					SDN automates tasks such as configuration and policy management, and enables the network to dynamically respond to application requirements.
+				\end{definition}
+			\subsection{Securing Data Transmission}
+				\begin{definition}{Encryption}
+					The process of converting an original message into a form that can be understood only by the intended receiver.
+					\begin{description}
+						\item[Encryption Key] A variable that is applied (using an algorithm) to a set of unencrypted text to produce encrypted text, or to decrypt encrypted text. 
+					\end{description}
+					Encryption relies on the limitation of computing power for their security.
+				\end{definition}
+				\subsubsection{Securing Wireless Networks}
+					\begin{definition}{Wired Equivalent Privacy (WEP)}
+						Used to use an encryption based on 64-bit keys, now upgraded to 128-bit keys. An early attempt at securing wireless communications, and is not difficult for hackers to crack.
+					\end{definition}
+					\begin{definition}{Wi-Fi Protected Access (WPA)}
+						A security protocol that offers significantly improved protection over WEP.
+					\end{definition}
+					\begin{sidenote}{Steps to safeguard a wireless network}
+						\begin{itemize}
+							\item Connect to the router and change the default login and password for the router
+							\item Create a \concept{service set identifier (SSID)}, a 32-character unique identifier attached to the header portion of packets sent over a wireless network that differentiates one network from another.
+							\item Configure the security to WPA
+							\item Disable SSID broadcasting
+						\end{itemize}
+					\end{sidenote}
+			\subsection{Virtual Private Networks}
+				\begin{definition}{Virtual Private Network (VPN)}
+					A private network that uses a public network (usually the Internet) to connect multiple remote locations.
+
+					Provides network connectivity over a potentially long physical distance, and can be considered a form of wide area network.
+				\end{definition}
+
 	\vbox{\rulechapterend}
 \end{document}
