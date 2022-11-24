@@ -68,3 +68,7 @@
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QTools that automate many of the tasks required in a systems development effort, and encourage adherence to the SDLC.\\E$"}
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThe determination of whether laws or regulations may prevent or limit a systems development project.\\E$"}
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThis group reviews the systems investigation report.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThe purpose of data collection is to seek additional information bout the problems or needs identified in the systems investigation report.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThe purpose of data collection is to seek additional information about the problems or needs identified in the systems investigation report.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QA table that shows relationships between various aspects of a systems development effort.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThe manipulation of collected data, so that the systems analysis team members can use the data.\\E$"}

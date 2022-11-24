@@ -324,5 +324,100 @@
 					An advisory group consisting of senior management and users from the IS department and other functional areas. This group reviews the systems investigation report.
 				\end{definition}
 
+		\section{Systems Analysis}
+			The overall emphasis of systems analysis is gathering data on the existing system, determining the requirements for the new system, considering alternatives within these constraints, and investigating the feasibility of the solutions.
+
+			The primary outcome of systems analysis is a prioritised list of systems requirements.
+			\subsection{General Considerations}
+				Systems analysis starts by clarifying the overall goals of the organisation, and determining how the existing or proposed system helps meet them. Normally follows these steps:
+				\begin{enumerate}[nosep]
+					\item Assemble the participants for systems analysis
+					\item Collect appropriate data and requirements
+					\item Analyse the data and requirements
+					\item Prepare a report on the existing system, new system requirements, and project priorities.
+				\end{enumerate}
+			\subsection{Data Collection and Analysis}
+				\subsubsection{Data Collection}
+					The purpose of data collection is to seek additional information about the problems or needs identified in the systems investigation report. Data collection begins by identifying and locating the various sources of data, including both internal and external sources.
+					\begin{sidenote}{Steps in Data Collection}
+						\begin{center}
+							\begin{enumerate*}[nosep, itemjoin={\quad}]
+								\item Identify data sources
+								\item Data collection
+								\item Verification
+							\end{enumerate*}
+						\end{center}
+					\end{sidenote}
+					\begin{definition}{Direct Observation}
+						Watching the existing system in action, by one or more members of the analysis team.
+					\end{definition}
+					\begin{definition}{Questionnaires}
+						A method of gathering data when the data sources are spread over a wide geographic area.
+					\end{definition}
+					\begin{definition}{Interviews}
+						Directly communicating with users of the system. Can be structured or unstructured.
+						\begin{description}[nosep]
+							\item[Structured Interview] An interview where the questions are prepared in advance.
+							\item[Unstructured Interview] An interview where the questions are not prepared in advance. The interviewer relies on experience in asking the best questions to uncover inherent problems of the existing system.
+						\end{description}
+					\end{definition}
+					\begin{definition}{Statistical Sampling}
+						Selecting a random sample of data, and applying the characteristics of the sample to the whole group.
+					\end{definition}
+				\subsubsection{Data Analysis}
+					\begin{definition}{Data Analysis}
+						The manipulation of collected data, so that the systems analysis team members can use the data.
+					\end{definition}
+					\begin{definition}{Data Modelling}
+							Visualise and structure the data that the organisation stores.
+					\end{definition}
+					\begin{definition}{Activity (or Process Modelling)}
+						Describe the related objects, associations, and activities.
+						\begin{description}
+							\item[Activities] Events or items are necessary to fulfil the business relationship, or that can be associated with the business relationship in a meaningful way.
+							\item[Data Flow Diagram (DFD)] A model of objects, associations, and activities, that describes how data can flow between and around various objects. These work on the premise that every activity involves some communication, transference, or flow that can be described as a data element. They show the logical sequence of associations and activities, not the physical processes.
+							\item[Use Case Model] Consists of two parts -- a diagram showing each process, and the `actors' who use them. An \concept{actor} is someone who gets something out of the process. The second part of the model is a text description of each process broken down into numbered steps.
+						\end{description}
+					\end{definition}
+					\begin{definition}{Application Flowcharts}
+						Charts that show the relationships between applications or systems.
+					\end{definition}
+					\begin{definition}{Grid Charts}
+						A table that shows relationships between various aspects of a systems development effort.
+					\end{definition}
+					\begin{definition}{CASE Tools}
+						During the analysis phase, a \concept{CASE repository} -- a database of system descriptions, parameters and objectives -- will be developed.
+					\end{definition}
+			\subsection{Requirements Analysis}
+					The purpose of requirements analysis is to determine user, stakeholder and organisational needs.
+			\subsection{The IS Plan}
+				\begin{definition}{The IS Plan}
+					Translates strategic and organisational goals into systems development initiatives. This process often generates strategic planning documents that can be used to define systems requirements.
+					\begin{center}
+						\includegraphics[width=0.8\textwidth]{chapter11/is_plan.png}
+					\end{center}
+				\end{definition}
+			\subsection{Object-Oriented Systems Analysis}
+				\begin{definition}{Object-Oriented Systems Analysis}
+					Like traditional analysis, problems or potential opportunities are identified.
+
+					With the object-oriented approach, systems analysts are looking for \concept{classes} -- things within the system that have data and action -- rather than entities. These classes are then modelled with the messages and data flow between them.
+
+					\begin{description}
+						\item[Object] An instance of a class.
+					\end{description}
+				\end{definition}
+			\subsection{The Systems Analysis Report}
+				\begin{definition}{Systems Analysis Report}
+					A formal report that concludes system analysis. It should cover:
+					\begin{itemize}[nosep]
+						\item The strengths and weaknesses of the existing system from a stakeholder's perspective
+						\item The user/stakeholder requirements for the new system (also called the \concept{functional requirements})
+						\item The organisational requirements for the new system
+						\item A description of what the new information system should do to solve a problem
+					\end{itemize}
+					This report gives managers a good understanding of the problems and strengths of the existing system.
+				\end{definition}
+
 	\vbox{\rulechapterend}
 \end{document}
