@@ -72,3 +72,13 @@
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThe purpose of data collection is to seek additional information about the problems or needs identified in the systems investigation report.\\E$"}
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QA table that shows relationships between various aspects of a systems development effort.\\E$"}
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThe manipulation of collected data, so that the systems analysis team members can use the data.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Qcomputer programmers systems analysts [enumiienumii] stakeholders senior-level managers\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QWhich of the following people ultimately benefit from a systems development project?\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcomputer programmers systems analysts [enumiienumii] stakeholders senior-level managers\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q[enumiienumii] rapid application development joint optimisation prototyping extended application development Systems performance is usually determined by factors such as fixed investements in hardware and related equipment.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qcomputer programmers systems analysts [enumiienumii] stakeholders senior-level managers What factors are essential to the success of certain functional areas of an organisation?\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Qcomputer programmers systems analysts [enumiienumii] stakeholders senior-level managers What factors are essential to the success of certain functional areas of an organisation?\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q[enumiienumii] critical success factors systems analysis factors creative goal factors systems development factors What employs tools, techniques and methodologies designed to speed application development?\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q[enumiienumii] rapid application development joint optimisation prototyping extended application development Systems performance is usually determined by factors such as fixed investments in hardware and related equipment.\\E$"}
+{"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q[enumiienumii] investigation analysis design implementation Data modelling is most often accomplished through the use of Entity-relationship Diagrams, whereas activity modelling is often accomplished through the use of Data Flow Diagrams.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QFalse Prototyping takes an iterative approach to the systems development process.\\E$"}
