@@ -19,3 +19,4 @@ EOQ
 ROP
 JAD
 satisficing
+MMOGs
