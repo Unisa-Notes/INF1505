@@ -120,5 +120,120 @@
 					Also called an \concept{intelligent robot}, or \concept{bot}. Programs and a knowledge base used to perform a specific task for a person, a process, or another program.
 				\end{definition}
 
+		\section{Expert Systems}
+			An expert system outputs a recommendation based on answers given to it by users (who are not experts in the field)
+			\begin{sidenote}{When to Use Expert Systems}
+				\begin{itemize}
+					\item Provide a high potential payoff or significantly reduce downside risk.
+					\item Capture and preserve irreplaceable human expertise.
+					\item Solve a problem that is not easily solved using traditional programming techniques.
+					\item Develop a system which is more consistent than human experts.
+					\item Provide expertise needed at a number of locations at the same time, or in a hostile environment that is dangerous to human health.
+					\item Provide expertise that is expensive or rare.
+					\item Develop a solution faster than human experts can.
+					\item Provide expertise needed for training and development to share the wisdom and experience of human experts with many people.
+				\end{itemize}
+			\end{sidenote}
+			\subsection{Components of an Expert System}
+				\begin{sidenote}{Components of an Expert System}
+					An expert system consists of a collection of integrated and related components, including a knowledge base, an inference engine, an explanation facility, a knowledge base acquisition facility, and a user interface.
+					\begin{center}
+						\includegraphics[width=0.7\textwidth]{chapter09/expert_systems.png}
+					\end{center}
+				\end{sidenote}
+				\subsubsection{The Knowledge Base}
+					\begin{definition}{Knowledge Base}
+						A component of an expert system that stores all relevant information, data, rules, cases, and relationships used by the expert system.
+
+						A natural extension of a database, and a decision support system.
+					\end{definition}
+					\begin{sidenote}{Tools and Techniques to Create a Knowledge Base}
+						\begin{itemize}
+							\item Assembling human experts
+							\item Fuzzy logic -- allow knowledge and relationships that are not precise or exact.
+							\item Rules: a conditional statement that links conditions to actions or outcomes.
+								\begin{indentparagraph}
+									\begin{description}
+										\item[IF-THEN statements] Rules that suggest certain conclusions.
+									\end{description}
+								\end{indentparagraph}
+							\item Cases
+						\end{itemize}
+					\end{sidenote}
+				\subsubsection{The Inference Engine}
+					\begin{definition}{Inference Engine}
+						Part of the expert system that seeks information and relationships from the knowledge base, and provides answers, predictions, and suggestions the way a human expert would.
+					\end{definition}
+					\begin{definition}{Backward Chaining}
+						The process of starting with conclusions and working backwards to the supporting facts.
+					\end{definition}
+					\begin{definition}{Forward Chaining}
+						The process of starting with the facts and working forwards to the conclusions.
+					\end{definition}
+				\subsubsection{The Explanation Facility}
+					\begin{definition}{Explanation Facility}
+						Component of an expert system that allows a user of decision maker to understand how the expert system arrived at certain conclusions or results.
+					\end{definition}
+				\subsubsection{The Knowledge Acquisition Facility}
+					\begin{definition}{Knowledge Acquisition Facility}
+						Part of the expert system that provides convenient and efficient means of capturing and storing all the components of the knowledge base.
+					\end{definition}
+			\subsection{Expert Systems Development}
+				\begin{definition}{Domain}
+					The area of knowledge addressed by the expert system.
+				\end{definition}
+				\begin{definition}{Domain Expert}
+					The individual or group who has the expertise of knowledge one is trying to capture in the expert system.
+
+					They can usually do the following:
+					\begin{multicols}{2}
+						\begin{itemize}[nosep]
+							\item Recognise the real problem
+							\item Develop frameworks for problem-solving
+							\item Formulate theories about the situation
+							\item Learn from experience
+							\item Develop and use general rules to solve a problem
+							\item Solve problems quickly and efficiently
+							\item Know when to break the rules or general principles
+							\item Know what is and is not important in solving a problem
+							\item Explain the situation and solutions of problems to others
+						\end{itemize}
+					\end{multicols}
+				\end{definition}
+				\begin{definition}{Knowledge Engineer}
+					A person who has training or experience in the design, development, implementation, and maintenance of an expert system.
+				\end{definition}
+				\begin{definition}{Knowledge User}
+					The person or group that uses and benefits from the expert system.
+				\end{definition}
+				\subsubsection{Expert Systems Development Tools and Techniques}
+					\begin{definition}{Expert System Shell}
+						A collection of software packages and tools used to design, develop, implement and maintain expert systems.
+					\end{definition}
+			\subsection{Applications of Expert Systems and Artificial Intelligence}
+				\begin{sidenote}{Applications of Expert Systems and Artificial Intelligence}
+					\begin{multicols}{2}
+						\begin{itemize}[nosep]
+							\item Credit granting and loan applications
+							\item Stock picking
+							\item Catching cheats and terrorists
+							\item Budgeting
+							\item Games
+							\item Information management and retrieval
+							\item AI and expert systems embedded in products
+							\item Plant layout and manufacturing
+							\item Hospitals and medical facilities
+							\item Help desk and assistance
+							\item Employee performance evaluation
+							\item Virus detection
+							\item Repair and maintenance
+							\item Shipping
+							\item Marketing
+							\item Warehouse optimisation
+							\item Diagnosis
+						\end{itemize}
+					\end{multicols}
+				\end{sidenote}
+
 	\vbox{\rulechapterend}
 \end{document}
