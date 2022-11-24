@@ -59,3 +59,10 @@
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QA systems development approach that employs tools, techniques, and methodologies designed to speed application development.\\E$"}
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QAdvantages Disadvantages Puts an application into production sooner than any other approach Can burn out systems developers and other project participants Documentation is produced as a by-product of completing project tasks Requires systems analysts and users to be skilled in RAD systems development tools and RAD techniques.\\E$"}
 {"rule":"AGREEMENT_SENT_START","sentence":"^\\QAdvantages Disadvantages Puts an application into production sooner than any other approach Can burn out systems developers and other project participants Documentation is produced as a by-product of completing project tasks Requires systems analysts and users to be skilled in RAD systems development tools and RAD techniques.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QPoor problem definition and analysis Follow a standard systems development approach.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QFollow a standard systems development approach.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QImplement a standards system.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QUsed to measure organisational experience with the systems development process.\\E$"}
+{"rule":"THE_SUPERLATIVE","sentence":"^\\QEach activity has an earliest start time, earliest finish time, and slack time.\\E$"}
+{"rule":"AGREEMENT_SENT_START","sentence":"^\\QAdvantages Disadvantages Produce systems with a longer effective operational life.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QTools that automate many of the tasks required in a systems development effort, and encourage adherence to the SDLC.\\E$"}

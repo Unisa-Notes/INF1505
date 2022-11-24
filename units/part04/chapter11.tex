@@ -184,5 +184,100 @@
 					An approach to creating computer code based on natural selection. Initially random code evolves through numerous iterations to become a program that solves a set problem.
 				\end{definition}
 
+		\section{Factors Affecting System Development Success}
+			\begin{sidenote}{Factors Affecting System Development Success}
+				\begin{itemize}[nosep]
+					\item Involvement
+					\item Degree of Change
+					\item The ability to manage change
+					\item Quality of project planning, and standards
+				\end{itemize}
+			\end{sidenote}
+			\begin{sidenote}{Project Planning Issues}
+				\begin{center}
+					\begin{tblr}{colspec={>{\raggedright}X>{\raggedright}X}, row{1}={font=\bfseries}, row{even}={white}}
+						Factor & Countermeasure\\
+						\midrule
+						Solving the wrong problem. & Establish a clear connection between the project and organisational goals.\\
+						Poor problem definition and analysis & Follow a standard systems development approach.\\
+						Poor communication & No easy solution.\\
+						Project is too ambitious & Narrow the project focus to address only the most important business opportunities.\\
+						Lack of top management support. & Identify the senior manager who has the most to gain from the success of the project, and recruit this person to champion the project.\\
+						Lack of management and user involvement. & Identify and recruit key stakeholders to be active participants in the project.\\
+						Inadequate or improper system design. & Follow a standard systems development approach.\\
+						Lack of standards. & Implement a standards system.\\
+						Poor testing and implementation. & Plan sufficient time for this activity.\\
+						Users cannot use the system effectively & Develop a rigorous user training program, and budget sufficient time in the schedule to execute it.\\
+						Lack of concern for maintenance. & Include an estimate of employee effort and costs for maintenance in the original project justification.
+					\end{tblr}
+				\end{center}
+			\end{sidenote}
+			\begin{definition}{Capability Maturity Model (CMM)}
+				Used to measure organisational experience with the systems development process. A measure of the maturity of the software development process in an organisation. CMM grades an organisation's systems development using five levels:
+				\begin{center}
+					\begin{enumerate*}[nosep, itemjoin={\quad}]
+						\item Initial
+						\item Repeatable
+						\item Defined
+						\item Managed
+						\item Optimised
+					\end{enumerate*}
+				\end{center}
+			\end{definition}
+			\subsection{Use of Project Management Tools}
+				\begin{definition}{Project Management}
+					The planning, scheduling, directing, and controlling of human, financial, and technological resources for a defined task whose result is achievement of specific goals and objectives.
+				\end{definition}
+				\begin{definition}{Project Schedule}
+					A detailed description of what is to be done. Each project activity, the use of personnel and other resources, and expected completion dates are described.
+					\begin{indentparagraph}
+						\begin{description}[nosep]
+							\item[Project Milestone] A critical data for the completion of a major part of the project.
+							\item[Project Deadline] The data the entire project is to completed and operational.
+						\end{description}
+					\end{indentparagraph}
+					Each activity has an earliest start time, earliest finish time, and \concept{slack time}.
+					\begin{indentparagraph}
+						\begin{description}[nosep]
+							\item[Slack Time] The amount of time an activity can be delayed without delaying the entire project.
+							\item[Critical Path] All the activities that, if delayed, would delay the entire project. These activities have zero slack time.
+						\end{description}
+					\end{indentparagraph}
+				\end{definition}
+				\begin{definition}{Program Evaluation and Review Technique (PERT)}
+					A formalised approach for developing a project schedule. It creates three time estimates for an activity: shortest possible time, most likely time, and longest possible time.
+				\end{definition}
+				\begin{definition}{Gantt chart}
+					A graphical tool used for planning, monitoring, and coordinating projects. Essentially a grid that lists activities and deadlines.
+				\end{definition}
+				\begin{definition}{Project Management Software}
+					Software that monitors all project activities, and determines whether activities and the entire project are on time, and within budget.
+
+					Has workgroup capabilities to handle multiple projects, and to allow a team to interact with the same software.
+
+					Both PERT and Gantt techniques can be automated using this software.
+				\end{definition}
+			\subsection{Use of Computer-Aided Software Engineering}
+				\begin{definition}{Computer-Aided Software Engineering (CASE)}
+					Tools that automate many of the tasks required in a systems development effort, and encourage adherence to the SDLC.
+					\begin{indentparagraph}
+						\begin{description}
+							\item[Upper-CASE Tools] Tools that focus on activities associated with the early stages of systems development. These packages provide automated tools to assist with systems investigation, analysis and design activities.
+							\item[Lower-CASE Tools] Tools that focus on the implementation stage of systems development, and can automatically generate structured program code. 
+						\end{description}
+					\end{indentparagraph}
+				\end{definition}
+				\begin{sidenote}{Advantages and Disadvantages of CASE Tools}
+					\begin{tblr}{colspec={>{\raggedright}X|>{\raggedright}X}, row{1}={font=\bfseries}, row{even}={white}}
+						Advantages & Disadvantages\\
+						\midrule
+						Produce systems with a longer effective operational life. & Increase the initial costs of building and maintaining systems.\\
+						Produce systems that more closely meet user needs and requirements. & Require more extensive and accurate definition of user needs and requirements.\\
+						Produce systems with excellent documentation. & Can be difficult to customise.\\
+						Produce systems that need less systems support. & Require more training of maintenance staff.\\
+						Produce more flexible systems. & Can be difficult to use with existing systems.
+					\end{tblr}
+				\end{sidenote}
+
 	\vbox{\rulechapterend}
 \end{document}
