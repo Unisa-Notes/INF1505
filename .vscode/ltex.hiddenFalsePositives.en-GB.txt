@@ -66,3 +66,5 @@
 {"rule":"THE_SUPERLATIVE","sentence":"^\\QEach activity has an earliest start time, earliest finish time, and slack time.\\E$"}
 {"rule":"AGREEMENT_SENT_START","sentence":"^\\QAdvantages Disadvantages Produce systems with a longer effective operational life.\\E$"}
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QTools that automate many of the tasks required in a systems development effort, and encourage adherence to the SDLC.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThe determination of whether laws or regulations may prevent or limit a systems development project.\\E$"}
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThis group reviews the systems investigation report.\\E$"}
