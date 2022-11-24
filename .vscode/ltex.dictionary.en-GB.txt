@@ -18,3 +18,4 @@ Satisficing
 EOQ
 ROP
 JAD
+satisficing
