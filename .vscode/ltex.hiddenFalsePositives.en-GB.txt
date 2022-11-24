@@ -82,3 +82,5 @@
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q[enumiienumii] rapid application development joint optimisation prototyping extended application development Systems performance is usually determined by factors such as fixed investments in hardware and related equipment.\\E$"}
 {"rule":"MORFOLOGIK_RULE_EN_GB","sentence":"^\\Q[enumiienumii] investigation analysis design implementation Data modelling is most often accomplished through the use of Entity-relationship Diagrams, whereas activity modelling is often accomplished through the use of Data Flow Diagrams.\\E$"}
 {"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QFalse Prototyping takes an iterative approach to the systems development process.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QWhen an expert writes a book teaching others, explicit knowledge is being created from tacit knowledge.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QWhen someone reads that book, and (eventually) becomes an expert themselves, tacit knowledge has been created by explicit knowledge.\\E$"}
