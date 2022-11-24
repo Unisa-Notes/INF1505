@@ -17,3 +17,4 @@ UDDI
 Satisficing
 EOQ
 ROP
+JAD
