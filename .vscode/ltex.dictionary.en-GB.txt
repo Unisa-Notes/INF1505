@@ -14,4 +14,8 @@ POPI
 shill
 VSAT
 UDDI
+Satisficing
+EOQ
+ROP
 JAD
+satisficing
