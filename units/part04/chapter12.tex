@@ -4,5 +4,109 @@
 \begin{document}
 	\setcounter{chapter}{11}
 	\chapter{Systems Design and Implementation}
+		\section{Systems Design}
+			\begin{definition}{Systems Design}
+				A stage of systems development where a solution to the problem is planned out and documented.
+
+				The primary result of the systems design phase is a technical design that details system inputs and the processing required to produce outputs.
+
+				\begin{indentparagraph}
+					\begin{description}
+						\item[Logical Design] A description of the functional requirements of a system. Involves planning the purpose of each system element, independent of hardware and software considerations.
+						\item[Physical Design] The specification of the characteristics of the system components needed to put the logical design into action.
+					\end{description}
+				\end{indentparagraph}
+			\end{definition}
+			\begin{sidenote}{Notations that can be used to document the design stage}
+				\begin{multicols}{2}
+					\begin{itemize}[nosep]
+						\item Data-flow diagrams
+						\item Class diagrams
+						\item Sequence diagrams
+					\end{itemize}
+				\end{multicols}
+			\end{sidenote}
+			\subsection{Interface Design and Controls}
+				How users access and interact with the system should be considered in both logical and physical design.
+				\begin{definition}{Menu-Driven System}
+					A system in which users simply pick what they want to do from a list of alternatives.
+				\end{definition}
+				\begin{definition}{Command Line Interface}
+					An interface where the user types text commands to the computer.
+				\end{definition}
+				\begin{sidenote}{Interface Considerations}
+					\begin{multicols}{2}
+						\begin{itemize}[nosep]
+							\item Whether the interface should be 2D or 3D
+							\item Whether to use virtual reality, a touch screen, or keyboard
+							\item Whether to include procedures to help with data entry
+							\item Whether to include interactive help
+						\end{itemize}
+					\end{multicols}
+				\end{sidenote}
+				\begin{sidenote}{Elements of Good Interactive Design}
+					\begin{tblr}{colspec={>{\raggedright}l>{\raggedright}X[3]}, row{1}={font=\bfseries}, row{even}={white}}
+						Element & Description\\
+						\midrule
+						Clarity & The computer system should ask for information using easily understood language. Whenever possible, the users themselves should select the words and phrases used for dialogue with the computer system.\\
+						Response time & Ideally, responses from the computer system should approximate a normal response time from a human being carrying on the same sort of dialogue.\\
+						Consistency & The system should use the same commands, phrases, words, and function keys for all applications.\\
+						Format & The system should use an attractive format and layout for all screens. The use of colour, highlighting, and the position of information on the screen should be considered carefully, and applied consistently.\\
+						Jargon & All dialogue should be written in easy-to-understand terms. Avoid jargon known only to IS specialists.\\
+						Respect & All dialogue should be developed professionally and with respect. Dialogue should not talk down or insult the user.
+					\end{tblr}
+				\end{sidenote}
+			\subsection{Design of System Security and Controls}
+				\subsubsection{Error Prevention, Detection, and Correction}
+					A new information system can be designed to check for certain errors itself.
+				\subsubsection{Disaster Planning and Recovery}
+					\begin{definition}{Disaster Planning}
+						The process of anticipating and providing for disasters.
+
+						Focuses primarily on two issues:
+						\begin{itemize}[nosep]
+							\item maintaining the integrity of corporate information
+							\item keeping the information system running until normal operations can be resumed
+						\end{itemize}
+					\end{definition}
+					\begin{definition}{Data Recovery}
+						The implementation of the disaster plan.
+					\end{definition}
+					\begin{definition}{Hot Site}
+						A duplicate, operational hardware system, or immediate access to one through a specialised vendor.
+					\end{definition}
+					\begin{definition}{Cold Site}
+						A computer environment that includes rooms, electrical service, telecommunications links, data storage devices and the like, but to hardware. Also called a \concept{shell}.
+					\end{definition}
+					\begin{definition}{Incremental Backup}
+						Making a backup copy of all files changed during the last few days or the last week.
+						\begin{indentparagraph}
+							\begin{description}
+								\item[Transaction Log] A separate file that contains only changes to the database, and is backed up more frequently than the database.
+							\end{description}
+						\end{indentparagraph}
+					\end{definition}
+				\subsubsection{Systems Controls}
+					\begin{sidenote}{Preventing Problems}
+							\begin{enumerate}[nosep]
+								\item Determine potential problems
+								\item Rank the importance of these problems
+								\item Plan the best place and approach to prevent problems
+								\item Decide the best way to handle problems if they occur
+							\end{enumerate}
+					\end{sidenote}
+					\begin{sidenote}{Systems Controls}
+						Rules and procedures to maintain data security.
+						\begin{indentparagraph}
+							\begin{description}
+								\item[Input controls] Maintain input integrity and security. Reduce errors while protecting the computer system against improper or fraudulent input.
+								\item[Processing controls] Deal with all aspects of processing and storage.
+								\item[Output controls] Ensure that output is handles correctly.
+								\item[Database controls] Deal with ensuring an efficient and effective database system.
+								\item[Telecommunications controls] Provide data and information transfer between systems that is accurate and reliable.
+								\item[Personnel controls] Make sure that only authorised personnel have access to certain systems, to help prevent computer-related mistakes and crime.
+							\end{description}
+						\end{indentparagraph}
+					\end{sidenote}
 	\vbox{\rulechapterend}
 \end{document}
