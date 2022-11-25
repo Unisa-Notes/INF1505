@@ -21,3 +21,5 @@ JAD
 satisficing
 MMOGs
 M-Pesa
+intellisense
+UNISA
