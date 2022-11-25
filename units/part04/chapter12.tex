@@ -4,5 +4,412 @@
 \begin{document}
 	\setcounter{chapter}{11}
 	\chapter{Systems Design and Implementation}
+		\section{Systems Design}
+			\begin{definition}{Systems Design}
+				A stage of systems development where a solution to the problem is planned out and documented.
+
+				The primary result of the systems design phase is a technical design that details system inputs and the processing required to produce outputs.
+
+				\begin{indentparagraph}
+					\begin{description}
+						\item[Logical Design] A description of the functional requirements of a system. Involves planning the purpose of each system element, independent of hardware and software considerations.
+						\item[Physical Design] The specification of the characteristics of the system components needed to put the logical design into action.
+					\end{description}
+				\end{indentparagraph}
+			\end{definition}
+			\begin{sidenote}{Notations that can be used to document the design stage}
+				\begin{multicols}{2}
+					\begin{itemize}[nosep]
+						\item Data-flow diagrams
+						\item Class diagrams
+						\item Sequence diagrams
+					\end{itemize}
+				\end{multicols}
+			\end{sidenote}
+			\subsection{Interface Design and Controls}
+				How users access and interact with the system should be considered in both logical and physical design.
+				\begin{definition}{Menu-Driven System}
+					A system in which users simply pick what they want to do from a list of alternatives.
+				\end{definition}
+				\begin{definition}{Command Line Interface}
+					An interface where the user types text commands to the computer.
+				\end{definition}
+				\begin{sidenote}{Interface Considerations}
+					\begin{multicols}{2}
+						\begin{itemize}[nosep]
+							\item Whether the interface should be 2D or 3D
+							\item Whether to use virtual reality, a touch screen, or keyboard
+							\item Whether to include procedures to help with data entry
+							\item Whether to include interactive help
+						\end{itemize}
+					\end{multicols}
+				\end{sidenote}
+				\begin{sidenote}{Elements of Good Interactive Design}
+					\begin{tblr}{colspec={>{\raggedright}l>{\raggedright}X[3]}, row{1}={font=\bfseries}, row{even}={white}}
+						Element & Description\\
+						\midrule
+						Clarity & The computer system should ask for information using easily understood language. Whenever possible, the users themselves should select the words and phrases used for dialogue with the computer system.\\
+						Response time & Ideally, responses from the computer system should approximate a normal response time from a human being carrying on the same sort of dialogue.\\
+						Consistency & The system should use the same commands, phrases, words, and function keys for all applications.\\
+						Format & The system should use an attractive format and layout for all screens. The use of colour, highlighting, and the position of information on the screen should be considered carefully, and applied consistently.\\
+						Jargon & All dialogue should be written in easy-to-understand terms. Avoid jargon known only to IS specialists.\\
+						Respect & All dialogue should be developed professionally and with respect. Dialogue should not talk down or insult the user.
+					\end{tblr}
+				\end{sidenote}
+			\subsection{Design of System Security and Controls}
+				\subsubsection{Error Prevention, Detection, and Correction}
+					A new information system can be designed to check for certain errors itself.
+				\subsubsection{Disaster Planning and Recovery}
+					\begin{definition}{Disaster Planning}
+						The process of anticipating and providing for disasters.
+
+						Focuses primarily on two issues:
+						\begin{itemize}[nosep]
+							\item maintaining the integrity of corporate information
+							\item keeping the information system running until normal operations can be resumed
+						\end{itemize}
+					\end{definition}
+					\begin{definition}{Data Recovery}
+						The implementation of the disaster plan.
+					\end{definition}
+					\begin{definition}{Hot Site}
+						A duplicate, operational hardware system, or immediate access to one through a specialised vendor.
+					\end{definition}
+					\begin{definition}{Cold Site}
+						A computer environment that includes rooms, electrical service, telecommunications links, data storage devices and the like, but to hardware. Also called a \concept{shell}.
+					\end{definition}
+					\begin{definition}{Incremental Backup}
+						Making a backup copy of all files changed during the last few days or the last week.
+						\begin{indentparagraph}
+							\begin{description}
+								\item[Transaction Log] A separate file that contains only changes to the database, and is backed up more frequently than the database.
+							\end{description}
+						\end{indentparagraph}
+					\end{definition}
+				\subsubsection{Systems Controls}
+					\begin{sidenote}{Preventing Problems}
+							\begin{enumerate}[nosep]
+								\item Determine potential problems
+								\item Rank the importance of these problems
+								\item Plan the best place and approach to prevent problems
+								\item Decide the best way to handle problems if they occur
+							\end{enumerate}
+					\end{sidenote}
+					\begin{sidenote}{Systems Controls}
+						Rules and procedures to maintain data security.
+						\begin{indentparagraph}
+							\begin{description}
+								\item[Input controls] Maintain input integrity and security. Reduce errors while protecting the computer system against improper or fraudulent input.
+								\item[Processing controls] Deal with all aspects of processing and storage.
+								\item[Output controls] Ensure that output is handles correctly.
+								\item[Database controls] Deal with ensuring an efficient and effective database system.
+								\item[Telecommunications controls] Provide data and information transfer between systems that is accurate and reliable.
+								\item[Personnel controls] Make sure that only authorised personnel have access to certain systems, to help prevent computer-related mistakes and crime.
+							\end{description}
+						\end{indentparagraph}
+					\end{sidenote}
+			\subsection{Generating Systems Design Alternatives}
+				\begin{definition}{Request for Proposal (RFP)}
+					A document that specifies in detail the required resources such as hardware and software.
+				\end{definition}
+				\subsubsection{Financial Options}
+					When acquiring computer systems, they can either be purchased, leased, or rented.
+					\begin{sidenote}{Renting (Short-term option) Advantages and Disadvantages}
+						\begin{tblr}{colspec={<{\raggedright}X|<{\raggedright}X}, row{1}={font=\bfseries}, row{even}={white}}
+							Advantages & Disadvantages\\
+							\midrule
+							No risk of obsolescence & No ownership of equipment\\
+							No long-term financial investment & High monthly costs\\
+							No initial investment of funds & Restrictive rental agreements\\
+							Maintenance usually included &
+						\end{tblr}
+					\end{sidenote}
+					\begin{sidenote}{Leasing (Long-term option) Advantages and Disadvantages}
+						\begin{tblr}{colspec={<{\raggedright}X|<{\raggedright}X}, row{1}={font=\bfseries}, row{even}={white}}
+							Advantages & Disadvantages\\
+							\midrule
+							No risk of obsolescence & No ownership of equipment\\
+							No long-term financial investment & High cost of cancelling lease\\
+							No initial investment of funds & Longer time commitment than renting\\
+							Less expensive than renting &
+						\end{tblr}
+					\end{sidenote}
+					\begin{sidenote}{Leasing (Long-term option) Advantages and Disadvantages}
+						\begin{tblr}{colspec={>{\raggedright}X|>{\raggedright}X}, row{1}={font=\bfseries}, row{even}={white}}
+							Advantages & Disadvantages\\
+							\midrule
+							Total control over equipment & High initial investment\\
+							Can sell equipment at any time & Additional cost of maintenance\\
+							Can deprecate equipment (which is a tax advantage) & Other expenses, including taxes and insurance\\
+							Low cost if owned for a number of years & Possibility of obsolescence\\
+						\end{tblr}
+					\end{sidenote}
+			\subsection{Evaluating and Selecting a Systems Design}
+				Evaluating and selecting the best design involves achieving a balance of system objectives that will best support organisational goals.
+				\begin{definition}{Preliminary Evaluation}
+					An initial assessment where purpose is to dismiss the unwanted proposals; begins after all proposals have been submitted.
+				\end{definition}
+				\begin{definition}{Final Evaluation}
+					A detailed investigation of the proposals offered by the vendors remaining after the preliminary evaluation.
+				\end{definition}
+				\subsubsection{Different Evaluation Types}
+					\begin{definition}{Group Consensus Evaluation}
+						A decision-making group is appointed and given the responsibility of making the final evaluation and selection.
+					\end{definition}
+					\begin{definition}{Cost-Benefit Analysis Evaluation}
+						An approach that lists the costs and benefits of each proposed system. After they are expressed in monetary terms, all the costs are compared with all the benefits.
+					\end{definition}
+					\begin{definition}{Benchmark Test Evaluation}
+						An examination that compares computer systems operating under the same conditions.
+					\end{definition}
+					\begin{definition}{Point Evaluation}
+						An evaluation process in which each evaluation factor is assigned a weight, in percentage points, based on importance. Then each proposed system is evaluated in terms of this factor and given a score from 0 to 100. The scores are totalled, and the system with the greatest total score is selected.
+
+						Used when there are many options to be evaluated.
+					\end{definition}
+				\subsubsection{Freezing Design Specifications}
+					\begin{definition}{Freezing Systems Design Specification}
+						Prohibiting further changes in the design of the system. Users agree in writing that the design is acceptable.
+					\end{definition}
+				\subsubsection{The Design Report}
+					\begin{definition}{Design Report}
+						The primary result of systems design, reflecting the decisions made and preparing the way for systems implementation.
+					\end{definition}
+
+		\pagebreak
+		\section{Systems Implementation}
+			\begin{definition}{Systems Implementation}
+				A stage of development that includes:
+				\begin{multicols}{2}
+					\begin{enumerate}[nosep]
+						\item Hardware Acquisition
+						\item Software Acquisition
+						\item User Preparation
+						\item Personnel: hiring and training
+						\item Site Preparation
+						\item Data Preparation
+						\item Installation
+						\item Testing
+						\item Start-up
+						\item User Acceptance
+					\end{enumerate}
+				\end{multicols}
+			\end{definition}
+			\subsection{Hardware Acquisition}
+				\begin{definition}{IS Vendor}
+					A company that offers hardware, software, databases, IS personnel, telecommunications systems, or other computer-related resources.
+
+					Includes:
+					\begin{multicols}{2}
+						\begin{itemize}[nosep]
+							\item general computer manufactures
+							\item small computer manufacturers
+							\item peripheral equipment manufacturers
+							\item computer dealers and distributors
+							\item leasing companies
+						\end{itemize}
+					\end{multicols}
+
+					Companies can pay only for the computing services they use -- called \concept{pay-as-you-go}, \concept{on-demand}, or \concept{utility} computing.
+				\end{definition}
+				\subsection{Software Acquisition}
+					\begin{definition}{Make-or-buy Decision}
+						The decision whether to obtain the necessary software from internal or external sources.
+						\begin{center}
+							\begin{tblr}{colspec={|>{\raggedright}X[1]|>{\raggedright}X[2]>{\raggedright}X[2]|}, row{1}={font=\bfseries}, column{1}={font=\bfseries}, row{even}={white}}
+								\toprule
+								Factor & Off the Shelf (Buy) & Bespoke (Make)\\
+								\midrule
+								Cost & Lower cost & Higher cost\\
+								Needs & Might not exactly match needs & Software should exactly match needs\\
+								Quality & Usually high & Varies\\
+								Speed & Can acquire it now & Can take years to develop\\
+								Competitive advantage & Other organisations can have the same software and the same advantage & Can develop a competitive advantage with good software\\
+								\bottomrule
+							\end{tblr}
+						\end{center}
+					\end{definition}
+					\subsubsection{Externally Acquired Software}
+						\begin{definition}{Commercial Off the Shelf (COTS) Software}
+							Involves the use of commonly available products from software vendors. Combines software from various vendors into a finished system.
+						\end{definition}
+					\subsubsection{Developing Software}
+						\begin{definition}{Chief Programming Team}
+							A group of skilled IS professionals who design and implement a set of programs.
+						\end{definition}
+						\begin{sidenote}{Tools and Techniques in Developing Software}
+							\begin{description}[nosep]
+								\item[CASE (Computer Aided Software Engineering) and object-oriented approaches]
+								\item[Cross-platform development] A development technique that allows programmers to develop programs that can run on computer systems having different hardware and operating systems or platforms.
+								\item[Integrated Development Environments (IDEs)] Software that combines the tools needed for programming with a programming language in one integrated package.
+								\item[Structured Walkthrough] A planned and pre-announced review of the progress of a program module. Helps team members review and evaluate the progress of components of a project.
+								\item[Technical Documentation] Written details used by computer operators to execute the program, and by analysts and programmers to solve problems or modify the program.
+							\end{description}
+						\end{sidenote}
+				\subsection{User Preparation}
+					\begin{definition}{User Preparation}
+						The process of readying managers, decision-makers, employees, other users, and stakeholders for new systems.
+					\end{definition}
+				\subsection{Site Preparation}
+					\begin{definition}{Site Preparation}
+						Preparation of the location of a new system.
+					\end{definition}
+				\subsection{Data Preparation}
+					\begin{definition}{Data Preparation}
+						Also called \concept{data conversion}. Ensuring all files and databases are ready to be used with new computer software and systems.
+					\end{definition}
+				\subsection{Installation}
+					\begin{definition}{Installation}
+						The process of physically placing the computer equipment on the site, and making it operational.
+					\end{definition}
+				\subsection{Testing}
+					\begin{sidenote}{Testing Types}
+						\begin{description}[nosep]
+							\item[Unit Testing] Testing of individual programs.
+							\item[System Testing] Testing the entire system of programs.
+							\item[Volume Testing] Testing the application with a large amount of data.
+							\item[Integration Testing] Testing all related systems together.
+							\item[Acceptance Testing] Conducting any tests required by the user.
+							\item[Alpha Testing] Testing an incomplete or early version of the system.
+							\item[Beta Testing] Testing a complete and stable system by end-users.
+						\end{description}
+					\end{sidenote}
+				\subsection{Start-Up}
+					\begin{definition}{Start-Up}
+						Also called \concept{cutover}. The process of making the final tested information system fully operational.
+					\end{definition}
+					\begin{sidenote}{Start-Up Approaches}
+						\begin{description}[nosep]
+							\item[Direct Conversion] Stopping the old system and starting the new system on a given date.
+							\item[Phase-in Approach] Slowly replacing components of the old system with those of the new one. This process is repeated for each application until the new system is running every application, and performing as expected. Also called a \concept{piecemeal approach}.
+							\item[Pilot Running] Introducing the new system by direct conversion for one group of users rather than all users.
+							\item[Parallel Running] Running both the old and the new systems for a period of time.
+						\end{description}
+					\end{sidenote}
+				\subsection{User Acceptance}
+					\begin{definition}{User Acceptance Document}
+						A formal agreement signed by the user that states that a phase of the installation or the complete system is approved.
+					\end{definition}
+
+		\section[Systems Operation and Maintenance]{Systems Operation and Maintenance \sectionmark{Systems Maintenance}}
+			\sectionmark{Systems Maintenance}
+			\begin{definition}{Systems Operation}
+				Use of a new or modified system.
+			\end{definition}
+			\begin{definition}{Systems Maintenance and Review}
+				The systems development phase that ensures the system operates as intended, and modifies the system so that it continues to meet changing business needs.
+			\end{definition}
+			\begin{sidenote}{Reasons for Maintenance}
+				\begin{multicols}{2}
+					\begin{itemize}[nosep]
+						\item Changes in business processes
+						\item New requests from stakeholders, users and managers
+						\item Bugs or errors in the program
+						\item Technical and hardware problems
+						\item Corporate mergers and acquisitions
+						\item Government regulations
+						\item Change in the operating system or hardware on which the application runs
+						\item Unexpected events
+					\end{itemize}
+				\end{multicols}
+			\end{sidenote}
+			\subsection{Types of Maintenance}
+				\begin{definition}{Slipstream Upgrade}
+					A minor upgrade -- typically a code adjustment or minor bug fix -- not worth announcing. It usually requires recompiling all the code, and, in so doing, it can create entirely new bugs.
+				\end{definition}
+				\begin{definition}{Patch}
+					A minor change to correct a problem or make a small enhancement. It is usually an addition to an existing program.
+				\end{definition}
+				\begin{definition}{Release}
+					A significant program change that often requires changes in the documentation of the software.
+				\end{definition}
+				\begin{definition}{Version}
+					A major program change, typically encompassing many new features.
+				\end{definition}
+			\subsection{Request for Maintenance Form}
+				\begin{definition}{Request for Maintenance Form}
+					A form authorising modification of programs.
+
+					Usually signed by a business manager, who documents the need for the change, and identifies the priority of the changes relative to other work that has been requested.
+				\end{definition}
+
+		\section{Systems Review}
+			\begin{definition}{Systems Review}
+				The final step of systems development, involving the analysis of systems to make sure that they are operating as intended.
+			\end{definition}
+			\begin{sidenote}{Types of Review Procedures}
+				\begin{description}
+					\item[Event-driven Review] A review triggered by a problem or opportunity, such as an error, a corporate merger, or a new market for products.
+					\item[Time-driven Review] A review performed after a specified amount of time.
+				\end{description}
+				\begin{center}
+					\begin{tblr}{colspec={|>{\raggedright}X|>{\raggedright}X|}, row{1}={font=\bfseries}, row{even}={white}}
+						\toprule
+						Event-driven & Time-driven\\
+						\midrule
+						Problem with an existing system & Monthly review\\
+						Merger & Yearly review\\
+						New accounting system & Review every few years\\
+						Executive decisions & Five-year review\\
+						\bottomrule
+					\end{tblr}
+				\end{center}
+			\end{sidenote}
+			\begin{sidenote}{Factors to Consider}
+				\begin{multicols}{3}
+					\begin{itemize}[nosep]
+						\item Mission
+						\item Organisation goals
+						\item Hardware and software
+						\item Database
+						\item Telecommunications
+						\item IS personnel
+						\item Control
+						\item Training
+						\item Costs
+						\item Complexity
+						\item Reliability
+						\item Efficiency
+						\item Response time
+						\item Documentation
+					\end{itemize}
+				\end{multicols}
+			\end{sidenote}
+			\subsection{Systems Performance Measurement}
+				\begin{definition}{Systems Performance Measurement}
+					Monitoring the system -- the number of errors encountered, the amount of memory required, the amount of processing or CPU time needed, and other problems.
+				\end{definition}
+				\begin{definition}{System Performance Products}
+					Software that measures all components of the computer-based information system, including hardware, software, database, telecommunications and network systems.
+				\end{definition}
+
+		\section{Exercises}
+			\begin{exercise}{Self-Assessment}
+				\begin{enumerate}
+					\item Determining the needed hardware and software for a new system is an example of:
+						\begin{enumerate}[label=\alph*., nosep]
+							\item logical design
+							\item[\refstepcounter{enumii}\Circled{\alph{enumii}}] \concept{physical design}
+							\item interactive design
+							\item object-oriented design
+						\end{enumerate}
+					\item Disaster planning is an important part of designing security and control systems. True or false? \concept{True}.
+					\item The \concept{Request for proposal (RFP)} often results in a formal bid that is used to determine who gets a contract for designing new or modifying existing systems. It specifies in detail the required resources such as hardware and software.
+					\item Near the end of the design stage, an organisation prohibits further changes in the design of the system. This is called \concept{freezing design specifications}.
+					\item Software can be purchased from external developers or developed in-house. This decision is often called the \concept{make-or-buy} decision.
+					\item What type of documentation is used by computer operators to execute a program, and by analysts and programmers?
+						\begin{enumerate}[label=\alph*., nosep]
+							\item unit documentation
+							\item integrated documentation
+							\item[\refstepcounter{enumii}\Circled{\alph{enumii}}] \concept{technical documentation}
+							\item user documentation
+						\end{enumerate}
+					\item \concept{System} testing involves testing the entire system of programs.
+					\item The phase-in approach to conversion involves running both the old system and the new system for three months or longer. True or false? \concept{False}.
+					\item A \concept{patch} is a minor change to correct a problem, or make a small enhancement to a program or system.
+					\item Corporate mergers and acquisitions can be a reason for systems maintenance. True or false? \concept{True}.
+				\end{enumerate}
+			\end{exercise}
+
 	\vbox{\rulechapterend}
 \end{document}
